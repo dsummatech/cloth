@@ -682,6 +682,7 @@ body {
     background-color: transparent;
     box-shadow: 0px 0px 5px rgb(196, 195, 195);
     border-radius: 50px;
+    background-color: white;
   }
   .newsletter form input, button{
     border: 0;
@@ -694,4 +695,53 @@ body {
   }
   .newsletter form input::placeholder{
     font-size: 2vw;
+  }
+  .newsletter h3{
+    color: #af2d6e;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .detail{
+    background-color: white;
+    box-shadow: 0px 0px 5px rgb(237, 236, 236);
+    height: max-content;
+    width: 85%;
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    color: black;
+  }
+  .detail-in{
+    width: 100%;
+    height: max-content;
+  }
+  .detail-in img{
+    width: 100%;
+  }
+
+  .de-ac{
+    text-align: center;
+    padding: 10px 0;
+  }
+  .de-ac button{
+    background-color: #800040;
+    color: white;
+    padding: 10px;
+    margin: 0 10px;
+  }
+  .de-ac form{
+    box-shadow: 0px 0px 5px rgb(237, 236, 236);
+    padding: 10px;
+    width:90%;
+    text-align: left;
+  }
+  .de-ac form input{
+    outline: 0;
+    border: 0;
+    box-shadow: 0px 1px 2px  #800040;
+    width: 100%;
+    height: 40px;
+  }
+  .de-pr b{
+    color: goldenrod;
   }
