@@ -251,7 +251,7 @@ body .container .right .r-menu .col {
   cursor: pointer;
 }
 body .container .right .r-menu .col .col-img {
-  background-image: linear-gradient(to bottom right, #800040, white, white, white, #800040);
+  background-image: linear-gradient(to bottom right, #f3077d, white, #f3077d);
   box-shadow: 0px 0px 10px rgb(216, 214, 214);
   border-radius: 50%;
   height: -moz-max-content;
