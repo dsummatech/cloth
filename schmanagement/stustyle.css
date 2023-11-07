@@ -407,7 +407,10 @@ body .container .right .r-students .student-menu .stu-con .stu-col h3 {
     font-size: 1.5vw;
   }
   body .container .right .col h2 {
-    font-size: 2vw;
+    font-size: 2.5vw;
+  }
+  body .container .right .col p {
+    font-size: 2.5vw;
   }
   body .container .right .r-students {
     width: 100%;
