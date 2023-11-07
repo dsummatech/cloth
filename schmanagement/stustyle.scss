@@ -4,7 +4,7 @@
 body{
     font-family: sans-serif;
     font-size: 1vw;
-    transition: 5s;
+    transition: .5s;
     a{
         text-decoration: none;
         color: unset;
@@ -143,6 +143,16 @@ body{
                     font-size: 2vw;
                     cursor: pointer;
                 }
+                sup{
+                    position: relative;
+                    right: 16px;
+                    font-size: 1.5vw;
+                    color: white;
+                    font-weight: bold;
+                    background-color: green;
+                    padding: 0 4px;
+                    border-radius: 50%;
+                }
             }
         }
     }
@@ -213,28 +223,38 @@ body{
             transition:  ease linear 5s;
             .r-menu{
                 display: grid;
-                grid-template-columns: auto auto auto;
+                grid-template-columns: auto auto auto auto;
                 gap:10px;
                 transition:  ease linear 5s;
                 width: 100%;
                 height: max-content;
                 .col{
-                    background-image: linear-gradient(to bottom right, lightblue, white, white, white, lightblue);
+                    /*background-image: linear-gradient(to bottom right, lightblue, white, white, white, lightblue);
                     //background-image: url(images/bg10.jpg);
                     background-position: center;
                     background-repeat: no-repeat;
-                    background-size: cover;
+                    background-size: cover;*/
                     padding: 10px 0;
                     text-align: center;
                     color: black;
                     text-transform: capitalize;
                     font-family: 'Times New Roman', Times, serif;
                     font-size: 1vw;
-                    box-shadow: 0px 3px 3px black;
-                    border: 2px solid lightblue;
+                   /* box-shadow: 0px 3px 3px black;
+                    border: 2px solid lightblue;*/
                     position: relative;
                     transition: 5s ease linear;
                     cursor: pointer;
+                    .col-img{
+                        background-image: linear-gradient(to bottom right, #800040, white, white, white, #800040);
+                        box-shadow: 0px 0px 10px rgb(216, 214, 214);
+                        border-radius: 50%;
+                        height: max-content;
+                        width: max-content;
+                        padding: 15px;
+                        position: relative;
+                        margin: auto;
+                    }
                     h1{
                         font-size: 5vw;
                         color: rgb(110, 235, 227);
@@ -253,6 +273,16 @@ body{
                 width: 100%;
                 padding: 10px 0;
                 margin-top: 10px;
+                .r-student-notification{
+                    padding: 10px 15px;
+                    background-color: rgb(213, 236, 243);
+                    color: rgb(0, 191, 255);
+                    position: relative;
+                    width: 90%;
+                    margin: 5px auto;
+                    border-radius: 6px;
+                    text-transform: capitalize;
+                }
                 .r-students-h{
                     padding: 10px 0;
                     width: inherit;
@@ -352,6 +382,16 @@ body{
                     span{
                         font-size: 4vw;
                     }
+                    sup{
+                        position: relative;
+                        right: 12px;
+                        font-size: 2vw;
+                        color: white;
+                        font-weight: bold;
+                        background-color: green;
+                        padding: 0 2px;
+                        border-radius: 50%;
+                    }
                 }
             }
         }
@@ -368,6 +408,9 @@ body{
             .right{
                 .col{
                     font-size: 1.5vw;
+                    h2{
+                        font-size: 2vw;
+                    }
                 }
                 .r-students{
                     width: 100%;
