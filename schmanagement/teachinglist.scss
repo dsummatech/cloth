@@ -216,58 +216,114 @@ body{
                 }
             }
         }
-        .profile{
-            padding: 10px 0;
-            display: grid;
-            grid-template-columns: 50% auto;
-            gap: 1px;
-            .pr-left{
-                padding: 10px;
-                img{
-                    width: 100%;
+        .right{
+            width: 100%;
+            height: max-content;
+            margin-top: 10px;
+            transition:  ease linear 5s;
+            .r-menu{
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                gap:10px;
+                transition:  ease linear 5s;
+                width: 100%;
+                height: max-content;
+                .col{
+                    /*background-image: linear-gradient(to bottom right, lightblue, white, white, white, lightblue);
+                    //background-image: url(images/bg10.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;*/
+                    padding: 10px 0;
+                    text-align: center;
+                    color: black;
+                    text-transform: capitalize;
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: 1vw;
+                   /* box-shadow: 0px 3px 3px black;
+                    border: 2px solid lightblue;*/
+                    position: relative;
+                    transition: 5s ease linear;
+                    cursor: pointer;
+                    .col-img{
+                        background-color: #d2046b;
+                        box-shadow: 0px 0px 10px rgb(216, 214, 214);
+                        border-radius: 50%;
+                        height: max-content;
+                        width: max-content;
+                        padding: 15px;
+                        position: relative;
+                        margin: auto;
+                    }
+                    h1{
+                        font-size: 5vw;
+                        color: rgb(110, 235, 227);
+                    }
+                    p{
+                        b{
+                            border-bottom: 2px solid lightblue;
+                        }
+                    }
+                }
+                .col:hover{
+                    bottom: 5px;
                 }
             }
-            .pr-right{
-                padding: 10px;
-                h2, h1{
-                    color: rgb(110, 235, 227);
+            .r-students{
+                width: 100%;
+                padding: 10px 0;
+                margin-top: 10px;
+                .r-student-notification{
+                    padding: 10px 15px;
+                    background-color: rgb(213, 236, 243);
+                    color: rgb(0, 191, 255);
+                    position: relative;
+                    width: 90%;
+                    margin: 5px auto;
+                    border-radius: 6px;
+                    text-transform: capitalize;
                 }
-                .pr-right-list{
+                .r-students-h{
+                    padding: 10px 0;
+                    width: inherit;
+                    text-transform: uppercase;
                     display: grid;
-                    grid-template-columns: auto auto auto;
-                    gap: 10px 0;
+                    grid-template-columns: auto auto;
                     div{
-                        text-align:left;
-                        text-transform: capitalize;
+                        text-align: center;
+                        line-height: 4px;
                     }
                 }
-                table{
+                .student-menu{
                     width: 100%;
-                    
-                    tr{
-                        background-color: white;
-                        padding: 10px;
-                        th{
-                            padding: 10px 0;
-                            background-color: rgb(110, 235, 227);
-                            color: white;
-                        }
-                        th:nth-child(odd){
-                            background-color: lightblue;
-                        }
-                        td{
-                            padding: 10px 0;
+                    .stu-con{
+                        width: 96%;
+                        position: relative;
+                        margin: auto;
+                        display: grid;
+                        grid-template-columns:  32% 32% 32%;
+                        gap: 10px;
+                        .stu-col{
                             text-align: center;
+                            text-transform: capitalize;
+                            .stu-col-img{
+                                background-color: white;
+                                box-shadow: inset 1px 1px 10px lightblue;
+                                padding: 10px;
+                                border-radius: 5px;
+                                img{
+                                    width: 100%;
+                                    border-radius: 5px;
+                                }
+                                span{
+                                    font-size: 3vw;
+                                    color: rgb(110, 235, 227);
+                                }
+                            }
+                            h3{
+                                padding: 5px 0;
+                            }
                         }
-                        .edit{
-                            background-color: green;
-                            font-weight: bold;
-                            color: white;
-                        }
-                    }
-                    tr:nth-child(even){
-                        background-color: rgb(241, 239, 239);
-                        color: black;
                     }
                 }
             }
@@ -354,32 +410,60 @@ body{
             .left{
                 display: none;
             }
-            .profile{
-                padding: 10px 0;
-                display: grid;
-                grid-template-columns:auto;
-                gap: 1px;
-                .pr-left{
-                    padding: 10px;
-                    img{
-                        width: 100%;
+            .right{
+                .col{
+                    font-size: 1.5vw;
+                    h2{
+                        font-size: 2.5vw;
+                    }
+                    p{
+                        font-size: 2.5vw;
                     }
                 }
-                .pr-right{
-                    padding: 10px;
-                    h2, h1{
-                        color: rgb(110, 235, 227);
+                .r-students{
+                    width: 100%;
+                    padding: 10px 0;
+                    margin-top: 10px;
+                    .r-students-h{
+                        padding: 10px 0;
+                        width: inherit;
+                        text-transform: uppercase;
+                        display: grid;
+                        grid-template-columns: auto auto;
+                        div{
+                            text-align: center;
+                            line-height: 4px;
+                        }
                     }
-                    label{
-                        font-weight: bold;
-                    }
-                    input{
-                        width: 90%;
-                        height: 30px;
-                        background-color: rgb(225, 225, 228);
-                        outline: 0;
-                        border: 2px solid rgb(110, 235, 227);
-                        padding: 3px 6px;
+                    .student-menu{
+                        width: 100%;
+                        .stu-con{
+                            width: 96%;
+                            position: relative;
+                            margin: auto;
+                            display: grid;
+                            grid-template-columns: 48% 48%;
+                            gap: 10px;
+                            .stu-col{
+                                text-align: center;
+                                .stu-col-img{
+                                    background-color: white;
+                                    box-shadow: inset 1px 1px 10px rgb(222, 242, 249);
+                                    padding: 10px;
+                                    border-radius: 5px;
+                                    img{
+                                        width: 100%;
+                                    }
+                                    span{
+                                        font-size: 5vw;
+                                        color: rgb(110, 235, 227);
+                                    }
+                                }
+                                h3{
+                                    padding: 5px 0;
+                                }
+                            }
+                        }
                     }
                 }
             }
