@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1vw;
+  transition: 0.5s;
+}
+body a {
+  text-decoration: none;
+  color: unset;
+}
+body .mobile-menu {
+  background-image: linear-gradient(to bottom right, lightblue, white, white, white, lightblue);
+  padding: 10px;
+  width: 73%;
+  height: 100%;
+  position: fixed;
+  left: -80%;
+  transition: 0.5s;
+  overflow-y: scroll;
+}
+body .mobile-menu .close {
+  text-align: right;
+  font-size: 4vw;
+}
+body .mobile-menu .close span {
+  padding: 6px;
+  border: 2px solid lightblue;
+  cursor: pointer;
+}
+body .mobile-menu .left {
+  background-image: linear-gradient(to bottom right, lightblue, white, white, white, lightblue);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  overflow: hidden;
+  padding: 10px 0;
+  margin-top: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+body .mobile-menu .left .logo {
+  position: relative;
+  margin: auto;
+}
+body .mobile-menu .left .logo img {
+  width: 20%;
+}
+body .mobile-menu .left .menu-list {
+  width: 90%;
+  position: relative;
+  margin: auto;
+  padding: 10px;
+  color: rgb(110, 235, 227);
+  text-transform: capitalize;
+  font-size: 1.5vw;
+}
+body .mobile-menu .left .menu-list .active {
+  background-color: black;
+}
+body .mobile-menu .left .menu-list p {
+  padding: 10px 5px;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  box-shadow: inset 0px 0px 10px white;
+  cursor: pointer;
+}
+body .mobile-menu .left .menu-list p span {
+  font-size: 4vw;
+  color: rgb(110, 235, 227);
+  text-shadow: 0px 3px 3px black;
+}
+body .mobile-menu .left .menu-list p b {
+  padding: 0 10px;
+  font-size: 3vw;
+}
+body .mobile-menu .left .menu-list p:nth-child(even) {
+  background-color: white;
+  color: black;
+}
+body .mobile-menu .left .menu-list p:nth-child(odd) {
+  background-color: rgb(251, 249, 249);
+  color: black;
+}
+body .page {
+  position: absolute;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+}
+body header {
+  background-color: lightblue;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  gap: 10px;
+}
+body header .logo img {
+  width: 30%;
+  cursor: pointer;
+}
+body header .txt {
+  width: 80%;
+}
+body .admin {
+  background-color: rgb(142, 205, 227);
+  padding: 10px 0;
+  width: 100%;
+  color: white;
+  text-align: right;
+}
+body .admin .left {
+  margin-left: 20px;
+  display: none;
+}
+body .admin .left .ham {
+  width: 30px;
+  height: 23px;
+  border: 2px solid white;
+  padding: 5px;
+  cursor: pointer;
+}
+body .admin .left .ham .burger {
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  margin: 3px 0;
+}
+body .admin .right .div {
+  padding: 0 20px;
+  display: inline;
+}
+body .admin .right .div b {
+  font-size: 2vw;
+}
+body .admin .right .div span {
+  font-size: 2vw;
+  cursor: pointer;
+}
+body .admin .right .div sup {
+  position: relative;
+  right: 16px;
+  font-size: 1.5vw;
+  color: white;
+  font-weight: bold;
+  background-color: green;
+  padding: 0 4px;
+  border-radius: 50%;
+}
+body .container {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  display: grid;
+  grid-template-columns: 30% 68%;
+  gap: 0 1%;
+  transition: 5s ease linear;
+}
+body .container .left {
+  background-image: linear-gradient(to bottom right, lightblue, white, white, white, lightblue);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 10px 0;
+  margin-top: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+body .container .left .logo {
+  position: relative;
+  margin: auto;
+}
+body .container .left .logo img {
+  width: 20%;
+}
+body .container .left .menu-list {
+  width: 90%;
+  position: relative;
+  margin: auto;
+  padding: 10px;
+  color: rgb(110, 235, 227);
+  text-transform: capitalize;
+  font-size: 1.5vw;
+}
+body .container .left .menu-list p {
+  padding: 10px 5px;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  box-shadow: inset 0px 0px 10px white;
+  cursor: pointer;
+}
+body .container .left .menu-list p span {
+  font-size: 2vw;
+  color: rgb(110, 235, 227);
+  text-shadow: 0px 3px 3px black;
+}
+body .container .left .menu-list p b {
+  padding: 0 10px;
+}
+body .container .left .menu-list p:nth-child(even) {
+  background-color: white;
+  color: black;
+}
+body .container .left .menu-list p:nth-child(odd) {
+  background-color: rgb(251, 249, 249);
+  color: black;
+}
+body .container .profile {
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1px;
+}
+body .container .profile .pr-right {
+  border: 2px solid rgb(225, 225, 228);
+  padding: 10px;
+}
+body .container .profile .pr-right table {
+  width: 100%;
+}
+body .container .profile .pr-right table tr {
+  background-color: white;
+  padding: 10px;
+}
+body .container .profile .pr-right table tr th {
+  padding: 10px 0;
+  background-color: rgb(110, 235, 227);
+  color: white;
+}
+body .container .profile .pr-right table tr th:nth-child(odd) {
+  background-color: lightblue;
+}
+body .container .profile .pr-right table tr td {
+  padding: 10px 0;
+  text-align: center;
+}
+body .container .profile .pr-right table tr .edit {
+  background-color: green;
+  font-weight: bold;
+  color: white;
+}
+body .container .profile .pr-right table tr:nth-child(even) {
+  background-color: rgb(241, 239, 239);
+  color: black;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 2vw;
+  }
+  body header {
+    background-color: lightblue;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 10px;
+  }
+  body header .logo img {
+    width: 50%;
+  }
+  body header .txt {
+    width: 80%;
+  }
+  body .admin {
+    background-color: rgb(142, 205, 227);
+    padding: 10px 0;
+    width: 100%;
+    color: white;
+    text-align: right;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  body .admin .left {
+    margin-left: 20px;
+    display: block;
+  }
+  body .admin .left .ham {
+    width: 30px;
+    height: 23px;
+    border: 2px solid white;
+    padding: 5px;
+    cursor: pointer;
+  }
+  body .admin .left .ham .burger {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    margin: 3px 0;
+  }
+  body .admin .right .div {
+    padding: 0 15px;
+    display: inline;
+  }
+  body .admin .right .div b {
+    font-size: 4vw;
+  }
+  body .admin .right .div span {
+    font-size: 4vw;
+  }
+  body .admin .right .div sup {
+    position: relative;
+    right: 12px;
+    font-size: 2vw;
+    color: white;
+    font-weight: bold;
+    background-color: green;
+    padding: 0 2px;
+    border-radius: 50%;
+  }
+  body .container {
+    width: 98%;
+    position: relative;
+    margin: auto;
+    display: block;
+    grid-template-columns: none;
+    gap: 0;
+  }
+  body .container .left {
+    display: none;
+  }
+  body .container .profile {
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1px;
+  }
+  body .container .profile .pr-left {
+    padding: 10px;
+  }
+  body .container .profile .pr-left img {
+    width: 100%;
+  }
+  body .container .profile .pr-right {
+    border: 2px solid rgb(225, 225, 228);
+    padding: 10px;
+  }
+  body .container .profile .pr-right h2, body .container .profile .pr-right h1 {
+    text-align: center;
+    color: rgb(110, 235, 227);
+  }
+  body .container .profile .pr-right label {
+    font-weight: bold;
+  }
+  body .container .profile .pr-right input {
+    width: 90%;
+    height: 30px;
+    background-color: rgb(225, 225, 228);
+    outline: 0;
+    border: 2px solid rgb(110, 235, 227);
+    padding: 3px 6px;
+  }
+}/*# sourceMappingURL=timetable.css.map */
