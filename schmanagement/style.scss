@@ -346,7 +346,7 @@ body{
                     padding: 0 15px;
                     display: inline;
                     span{
-                        font-size: 3vw;
+                        font-size: 8vw;
                     }
                 }
             }
@@ -362,8 +362,21 @@ body{
                 display: none;
             }
             .right{
+                .r-menu{
+                    .col{
+                        font-size: 2vw;
+                        p{
+                            font-size: 3vw;
+                        }
+                    }
+                }
                 .col{
-                    font-size: 1.5vw;
+                    font-size:1.5vw;
+                }
+                .r-students{
+                    table{
+                        font-size: 3vw;
+                    }
                 }
             }
         }

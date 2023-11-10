@@ -342,7 +342,7 @@ body .container .right .r-students table tr:nth-child(even) {
     display: inline;
   }
   body .admin .right .div span {
-    font-size: 3vw;
+    font-size: 8vw;
   }
   body .container {
     width: 98%;
@@ -355,7 +355,16 @@ body .container .right .r-students table tr:nth-child(even) {
   body .container .left {
     display: none;
   }
+  body .container .right .r-menu .col {
+    font-size: 2vw;
+  }
+  body .container .right .r-menu .col p {
+    font-size: 3vw;
+  }
   body .container .right .col {
     font-size: 1.5vw;
+  }
+  body .container .right .r-students table {
+    font-size: 3vw;
   }
 }/*# sourceMappingURL=style.css.map */
