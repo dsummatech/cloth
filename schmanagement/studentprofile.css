@@ -216,114 +216,49 @@ body .container .left .menu-list p:nth-child(odd) {
   background-color: rgb(251, 249, 249);
   color: black;
 }
-body .container .right {
-  width: 100%;
-  height: -moz-max-content;
-  height: max-content;
-  margin-top: 10px;
-  transition: ease linear 5s;
-}
-body .container .right .r-menu {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 10px;
-  transition: ease linear 5s;
-  width: 100%;
-  height: -moz-max-content;
-  height: max-content;
-}
-body .container .right .r-menu .col {
-  /*background-image: linear-gradient(to bottom right, lightblue, white, white, white, lightblue);
-  //background-image: url(images/bg10.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;*/
+body .container .profile {
   padding: 10px 0;
-  text-align: center;
-  color: black;
-  text-transform: capitalize;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 1vw;
-  /* box-shadow: 0px 3px 3px black;
-   border: 2px solid lightblue;*/
-  position: relative;
-  transition: 5s ease linear;
-  cursor: pointer;
-}
-body .container .right .r-menu .col .col-img {
-  background-color: #d2046b;
-  box-shadow: 0px 0px 10px rgb(216, 214, 214);
-  border-radius: 50%;
-  height: -moz-max-content;
-  height: max-content;
-  width: -moz-max-content;
-  width: max-content;
-  padding: 15px;
-  position: relative;
-  margin: auto;
-}
-body .container .right .r-menu .col h1 {
-  font-size: 5vw;
-  color: rgb(110, 235, 227);
-}
-body .container .right .r-menu .col p b {
-  border-bottom: 2px solid lightblue;
-}
-body .container .right .r-menu .col:hover {
-  bottom: 5px;
-}
-body .container .right .r-students {
-  width: 100%;
-  padding: 10px 0;
-  margin-top: 10px;
-}
-body .container .right .r-students .r-student-notification {
-  padding: 10px 15px;
-  background-color: rgb(213, 236, 243);
-  color: rgb(0, 191, 255);
-  position: relative;
-  width: 90%;
-  margin: 5px auto;
-  border-radius: 6px;
-  text-transform: capitalize;
-}
-body .container .right .r-students .r-students-h {
-  padding: 10px 0;
-  width: inherit;
-  text-transform: uppercase;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 50% auto;
+  gap: 1px;
 }
-body .container .right .r-students .r-students-h div {
-  text-align: center;
-  line-height: 4px;
+body .container .profile .pr-left {
+  padding: 10px;
 }
-body .container .right .r-students .student-menu {
+body .container .profile .pr-left img {
   width: 100%;
 }
-body .container .right .r-students .student-menu .stu-con {
-  width: 96%;
-  position: relative;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 24% 24% 24% 24%;
-  gap: 10px;
+body .container .profile .pr-right {
+  border: 2px solid rgb(225, 225, 228);
+  padding: 10px;
 }
-body .container .right .r-students .student-menu .stu-con .stu-col {
-  text-align: center;
+body .container .profile .pr-right table {
+  width: 100%;
 }
-body .container .right .r-students .student-menu .stu-con .stu-col .stu-col-img {
+body .container .profile .pr-right table tr {
   background-color: white;
-  box-shadow: inset 1px 1px 10px lightblue;
-  padding: 20px 0;
-  border-radius: 5px;
+  padding: 10px;
 }
-body .container .right .r-students .student-menu .stu-con .stu-col .stu-col-img span {
-  font-size: 3vw;
-  color: rgb(110, 235, 227);
+body .container .profile .pr-right table tr th {
+  padding: 10px 0;
+  background-color: rgb(110, 235, 227);
+  color: white;
 }
-body .container .right .r-students .student-menu .stu-con .stu-col h3 {
-  padding: 5px 0;
+body .container .profile .pr-right table tr th:nth-child(odd) {
+  background-color: lightblue;
+}
+body .container .profile .pr-right table tr td {
+  padding: 10px 0;
+  text-align: center;
+}
+body .container .profile .pr-right table tr .edit {
+  background-color: green;
+  font-weight: bold;
+  color: white;
+}
+body .container .profile .pr-right table tr:nth-child(even) {
+  background-color: rgb(241, 239, 239);
+  color: black;
 }
 
 @media screen and (max-width: 700px) {
@@ -403,56 +338,35 @@ body .container .right .r-students .student-menu .stu-con .stu-col h3 {
   body .container .left {
     display: none;
   }
-  body .container .right .col {
-    font-size: 1.5vw;
-  }
-  body .container .right .col h2 {
-    font-size: 2.5vw;
-  }
-  body .container .right .col p {
-    font-size: 2.5vw;
-  }
-  body .container .right .r-students {
-    width: 100%;
+  body .container .profile {
     padding: 10px 0;
-    margin-top: 10px;
-  }
-  body .container .right .r-students .r-students-h {
-    padding: 10px 0;
-    width: inherit;
-    text-transform: uppercase;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
+    gap: 1px;
   }
-  body .container .right .r-students .r-students-h div {
-    text-align: center;
-    line-height: 4px;
+  body .container .profile .pr-left {
+    padding: 10px;
   }
-  body .container .right .r-students .student-menu {
+  body .container .profile .pr-left img {
     width: 100%;
   }
-  body .container .right .r-students .student-menu .stu-con {
-    width: 96%;
-    position: relative;
-    margin: auto;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 10px;
+  body .container .profile .pr-right {
+    border: 2px solid rgb(225, 225, 228);
+    padding: 10px;
   }
-  body .container .right .r-students .student-menu .stu-con .stu-col {
+  body .container .profile .pr-right h2, body .container .profile .pr-right h1 {
     text-align: center;
-  }
-  body .container .right .r-students .student-menu .stu-con .stu-col .stu-col-img {
-    background-color: white;
-    box-shadow: inset 1px 1px 10px rgb(222, 242, 249);
-    padding: 20px 0;
-    border-radius: 5px;
-  }
-  body .container .right .r-students .student-menu .stu-con .stu-col .stu-col-img span {
-    font-size: 5vw;
     color: rgb(110, 235, 227);
   }
-  body .container .right .r-students .student-menu .stu-con .stu-col h3 {
-    padding: 5px 0;
+  body .container .profile .pr-right label {
+    font-weight: bold;
   }
-}/*# sourceMappingURL=stustyle.css.map */
+  body .container .profile .pr-right input {
+    width: 90%;
+    height: 30px;
+    background-color: rgb(225, 225, 228);
+    outline: 0;
+    border: 2px solid rgb(110, 235, 227);
+    padding: 3px 6px;
+  }
+}/*# sourceMappingURL=studentprofile.css.map */
