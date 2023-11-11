@@ -306,8 +306,20 @@ body .container .right .r-students .t-calendar tr td {
   width: 14%;
 }
 body .container .right .r-students .t-calendar tr .booked {
+  background-color: gold;
+  color: black;
+}
+body .container .right .r-students .button {
+  margin: 10px 0;
+  text-align: center;
+}
+body .container .right .r-students .button button {
+  padding: 10px 15px;
+  font-weight: bold;
+  text-transform: capitalize;
   background-color: green;
   color: white;
+  border: 0;
 }
 
 @media screen and (max-width: 700px) {

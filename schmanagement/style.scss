@@ -306,9 +306,21 @@ body{
                             width: 14%;
                         }
                         .booked{
-                            background-color: green;
-                            color: white;
+                            background-color: gold;
+                            color: black;
                         }
+                    }
+                }
+                .button{
+                    margin: 10px 0;
+                    text-align: center;
+                    button{
+                        padding: 10px 15px;
+                        font-weight: bold;
+                        text-transform: capitalize;
+                        background-color: green;
+                        color: white;
+                        border: 0;
                     }
                 }
             }
