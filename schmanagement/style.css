@@ -212,7 +212,7 @@ body .container .right {
 }
 body .container .right .r-menu {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 32% 32% 32%;
   gap: 10px;
   transition: ease linear 5s;
   width: 100%;
@@ -354,6 +354,15 @@ body .container .right .r-students table tr:nth-child(even) {
   }
   body .container .left {
     display: none;
+  }
+  body .container .right .r-menu {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 10px;
+    transition: ease linear 5s;
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
   }
   body .container .right .r-menu .col {
     font-size: 2vw;

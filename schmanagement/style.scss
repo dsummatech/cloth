@@ -210,7 +210,7 @@ body{
             transition:  ease linear 5s;
             .r-menu{
                 display: grid;
-                grid-template-columns: auto auto auto;
+                grid-template-columns: 32% 32% 32%;
                 gap:10px;
                 transition:  ease linear 5s;
                 width: 100%;
@@ -363,6 +363,12 @@ body{
             }
             .right{
                 .r-menu{
+                    display: grid;
+                    grid-template-columns: 48% 48%;
+                    gap:10px;
+                    transition:  ease linear 5s;
+                    width: 100%;
+                    height: max-content;
                     .col{
                         font-size: 2vw;
                         p{
