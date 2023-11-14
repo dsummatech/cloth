@@ -321,6 +321,100 @@ body .container .right .r-students .button button {
   color: white;
   border: 0;
 }
+body .container .right .year-events {
+  text-align: center;
+  box-shadow: 0px 0px 5px rgb(204, 204, 204);
+  padding: 10px 0;
+  font-size: 1.1vw;
+}
+body .container .right .year-events h2 {
+  text-transform: uppercase;
+}
+body .container .right .year-events .year-e-container {
+  width: 98%;
+  position: relative;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 58% 40%;
+  gap: 10px;
+}
+body .container .right .year-events .year-e-container .assigned {
+  border: 2px solid rgb(255, 230, 246);
+  padding: 10px;
+}
+body .container .right .year-events .year-e-container .assigned h2 {
+  color: rgb(248, 120, 146);
+}
+body .container .right .year-events .year-e-container .assigned table {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: white;
+  border-collapse: collapse;
+}
+body .container .right .year-events .year-e-container .assigned table .edit {
+  background-color: green;
+  color: white;
+  text-transform: uppercase;
+}
+body .container .right .year-events .year-e-container .assigned table tr th {
+  text-transform: uppercase;
+  background-color: gold;
+}
+body .container .right .year-events .year-e-container .assigned table tr th, body .container .right .year-events .year-e-container .assigned table tr td {
+  width: 25%;
+  padding: 10px 0;
+}
+body .container .right .year-events .year-e-container .assigned table tr th input, body .container .right .year-events .year-e-container .assigned table tr td input {
+  width: 90%;
+  position: relative;
+  margin: auto;
+}
+body .container .right .year-events .year-e-container .assigned table tr:nth-child(even) {
+  background-color: rgb(248, 216, 222);
+  color: black;
+}
+body .container .right .year-events .year-e-container .add-events {
+  padding: 10px;
+  text-align: left;
+}
+body .container .right .year-events .year-e-container .add-events div {
+  line-height: 30px;
+}
+body .container .right .year-events .year-e-container .add-events sup {
+  color: red;
+}
+body .container .right .year-events .year-e-container .add-events input {
+  height: 30px;
+  width: 80%;
+  border: 0;
+  outline: 2px solid rgb(110, 235, 227);
+  padding: 0 10px;
+}
+body .container .right .year-events .year-e-container .add-events textarea {
+  width: 98%;
+  border: 0;
+  outline: 2px solid rgb(110, 235, 227);
+}
+body .container .right .year-events .year-e-container .add-events h2 {
+  color: rgb(248, 120, 146);
+  text-align: center;
+}
+body .container .right .year-events .year-e-container .add-events .event-time .e-t-me {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+body .container .right .year-events .year-e-container .add-events .ac-bu {
+  text-align: center;
+}
+body .container .right .year-events .year-e-container .add-events .ac-bu button {
+  color: white;
+  background-color: rgb(110, 235, 227);
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 0;
+}
 
 @media screen and (max-width: 700px) {
   body {
@@ -406,5 +500,67 @@ body .container .right .r-students .button button {
   }
   body .container .right .r-students table {
     font-size: 3vw;
+  }
+  body .container .right .year-events {
+    text-align: center;
+    box-shadow: 0px 0px 5px rgb(204, 204, 204);
+    padding: 10px;
+    font-size: 3.3vw;
+    width: 90%;
+    position: relative;
+    margin: auto;
+  }
+  body .container .right .year-events h2 {
+    text-transform: uppercase;
+  }
+  body .container .right .year-events .year-e-container {
+    width: 98%;
+    position: relative;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+  }
+  body .container .right .year-events .year-e-container .assigned {
+    border: 2px solid rgb(255, 230, 246);
+    padding: 10px;
+  }
+  body .container .right .year-events .year-e-container .assigned h2 {
+    color: rgb(248, 120, 146);
+  }
+  body .container .right .year-events .year-e-container .assigned table {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    background-color: white;
+    border-collapse: collapse;
+  }
+  body .container .right .year-events .year-e-container .assigned table .edit {
+    background-color: green;
+    color: white;
+    text-transform: uppercase;
+  }
+  body .container .right .year-events .year-e-container .assigned table tr th {
+    text-transform: uppercase;
+    background-color: gold;
+  }
+  body .container .right .year-events .year-e-container .assigned table tr th, body .container .right .year-events .year-e-container .assigned table tr td {
+    width: 25%;
+    padding: 10px 0;
+  }
+  body .container .right .year-events .year-e-container .assigned table tr th input, body .container .right .year-events .year-e-container .assigned table tr td input {
+    width: 90%;
+    position: relative;
+    margin: auto;
+  }
+  body .container .right .year-events .year-e-container .assigned table tr:nth-child(even) {
+    background-color: rgb(248, 216, 222);
+    color: black;
+  }
+  body .container .right .year-events .year-e-container .add-events {
+    padding: 10px;
+  }
+  body .container .right .year-events .year-e-container .add-events h2 {
+    color: rgb(248, 120, 146);
   }
 }/*# sourceMappingURL=style.css.map */
