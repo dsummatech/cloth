@@ -166,6 +166,7 @@ body .container .right .money {
   color: white;
   width: 100%;
   padding: 10px 0;
+  border-radius: 10px;
 }
 body .container .right .money .money-box {
   width: 90%;

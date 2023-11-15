@@ -1,4 +1,8 @@
 $(function () {
+
+  
+
+
    $(".ham").click(function () {
     $(".mobile-menu").css({left:"0%"});
    });

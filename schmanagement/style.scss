@@ -5,6 +5,7 @@ body{
     font-family: sans-serif;
     font-size: 1vw;
     transition: 5s;
+    scroll-behavior: smooth;
     a{
         text-decoration: none;
         color: unset;
@@ -161,6 +162,7 @@ body{
                 color: white;
                 width: 100%;
                 padding: 10px 0;
+                border-radius: 10px;
                 .money-box{
                     width: 90%;
                     position: relative;
@@ -299,6 +301,7 @@ body{
                 box-shadow: 0px 0px 5px rgb(204, 204, 204);
                 padding: 10px 0;
                 font-size: 1.1vw;
+                border-radius: 10px;
                 h2{
                     text-transform: uppercase;
                 }
