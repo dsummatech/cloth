@@ -93,68 +93,6 @@ body .page {
   height: -moz-max-content;
   height: max-content;
 }
-body header {
-  background-color: lightblue;
-  padding: 10px 0;
-  text-align: center;
-  color: white;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 20% 80%;
-  gap: 10px;
-}
-body header .logo img {
-  width: 30%;
-  cursor: pointer;
-}
-body header .txt {
-  width: 80%;
-}
-body .admin {
-  background-color: rgb(142, 205, 227);
-  padding: 10px 0;
-  width: 100%;
-  color: white;
-  text-align: right;
-}
-body .admin .left {
-  margin-left: 20px;
-  display: none;
-}
-body .admin .left .ham {
-  width: 30px;
-  height: 23px;
-  border: 2px solid white;
-  padding: 5px;
-  cursor: pointer;
-}
-body .admin .left .ham .burger {
-  width: 100%;
-  height: 4px;
-  background-color: white;
-  margin: 3px 0;
-}
-body .admin .right .div {
-  padding: 0 20px;
-  display: inline;
-}
-body .admin .right .div b {
-  font-size: 2vw;
-}
-body .admin .right .div span {
-  font-size: 2vw;
-  cursor: pointer;
-}
-body .admin .right .div sup {
-  position: relative;
-  right: 16px;
-  font-size: 1.5vw;
-  color: white;
-  font-weight: bold;
-  background-color: green;
-  padding: 0 4px;
-  border-radius: 50%;
-}
 body .container {
   width: 100%;
   height: -moz-max-content;
@@ -258,68 +196,6 @@ body .container .profile .pr-right table tr:nth-child(even) {
 @media screen and (max-width: 700px) {
   body {
     font-size: 2vw;
-  }
-  body header {
-    background-color: lightblue;
-    padding: 10px 0;
-    text-align: center;
-    color: white;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 20% 80%;
-    gap: 10px;
-  }
-  body header .logo img {
-    width: 50%;
-  }
-  body header .txt {
-    width: 80%;
-  }
-  body .admin {
-    background-color: rgb(142, 205, 227);
-    padding: 10px 0;
-    width: 100%;
-    color: white;
-    text-align: right;
-    display: inline-flex;
-    justify-content: space-between;
-  }
-  body .admin .left {
-    margin-left: 20px;
-    display: block;
-  }
-  body .admin .left .ham {
-    width: 30px;
-    height: 23px;
-    border: 2px solid white;
-    padding: 5px;
-    cursor: pointer;
-  }
-  body .admin .left .ham .burger {
-    width: 100%;
-    height: 4px;
-    background-color: white;
-    margin: 3px 0;
-  }
-  body .admin .right .div {
-    padding: 0 15px;
-    display: inline;
-  }
-  body .admin .right .div b {
-    font-size: 4vw;
-  }
-  body .admin .right .div span {
-    font-size: 4vw;
-  }
-  body .admin .right .div sup {
-    position: relative;
-    right: 12px;
-    font-size: 2vw;
-    color: white;
-    font-weight: bold;
-    background-color: green;
-    padding: 0 2px;
-    border-radius: 50%;
   }
   body .container {
     width: 98%;
