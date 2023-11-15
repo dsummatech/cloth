@@ -4,7 +4,7 @@
 body{
     font-family: sans-serif;
     font-size: 1vw;
-    transition: 5s;
+    transition: .5s;
     a{
         text-decoration: none;
         color: unset;
@@ -90,7 +90,6 @@ body{
         width: 100%;
         height: max-content;
     }
-    
     .container{
         width: 100%;
         height: max-content;
@@ -180,28 +179,38 @@ body{
             }
             .r-menu{
                 display: grid;
-                grid-template-columns: 32% 32% 32%;
+                grid-template-columns: auto auto auto auto;
                 gap:10px;
                 transition:  ease linear 5s;
                 width: 100%;
                 height: max-content;
                 .col{
-                    background-image: linear-gradient(to bottom right, lightblue, white, white, white, lightblue);
+                    /*background-image: linear-gradient(to bottom right, lightblue, white, white, white, lightblue);
                     //background-image: url(images/bg10.jpg);
                     background-position: center;
                     background-repeat: no-repeat;
-                    background-size: cover;
+                    background-size: cover;*/
                     padding: 10px 0;
                     text-align: center;
                     color: black;
                     text-transform: capitalize;
                     font-family: 'Times New Roman', Times, serif;
                     font-size: 1vw;
-                    box-shadow: 0px 3px 3px black;
-                    border: 2px solid lightblue;
+                   /* box-shadow: 0px 3px 3px black;
+                    border: 2px solid lightblue;*/
                     position: relative;
                     transition: 5s ease linear;
                     cursor: pointer;
+                    .col-img{
+                        background-color: #d2046b;
+                        box-shadow: 0px 0px 10px rgb(216, 214, 214);
+                        border-radius: 50%;
+                        height: max-content;
+                        width: max-content;
+                        padding: 15px;
+                        position: relative;
+                        margin: auto;
+                    }
                     h1{
                         font-size: 5vw;
                         color: rgb(110, 235, 227);
@@ -220,6 +229,16 @@ body{
                 width: 100%;
                 padding: 10px 0;
                 margin-top: 10px;
+                .r-student-notification{
+                    padding: 10px 15px;
+                    background-color: rgb(213, 236, 243);
+                    color: rgb(0, 191, 255);
+                    position: relative;
+                    width: 90%;
+                    margin: 5px auto;
+                    border-radius: 6px;
+                    text-transform: capitalize;
+                }
                 .r-students-h{
                     padding: 10px 0;
                     width: inherit;
@@ -231,69 +250,35 @@ body{
                         line-height: 4px;
                     }
                 }
-                table{
+                .student-menu{
                     width: 100%;
-                    
-                    tr{
-                        background-color: white;
-                        padding: 10px;
-                        th{
-                            padding: 10px 0;
-                            background-color: rgb(110, 235, 227);
-                            color: white;
-                        }
-                        th:nth-child(odd){
-                            background-color: lightblue;
-                        }
-                        td{
-                            padding: 10px 0;
+                    .stu-con{
+                        width: 96%;
+                        position: relative;
+                        margin: auto;
+                        display: grid;
+                        grid-template-columns:  24% 24% 24% 24%;
+                        gap: 10px;
+                        .stu-col{
                             text-align: center;
+                            .stu-col-img{
+                                background-color: white;
+                                box-shadow: inset 1px 1px 10px lightblue;
+                                padding: 20px 0;
+                                border-radius: 5px;
+                                span{
+                                    font-size: 3vw;
+                                    color: rgb(110, 235, 227);
+                                }
+                            }
+                            h3{
+                                padding: 5px 0;
+                            }
                         }
-                        .edit{
-                            background-color: green;
-                            font-weight: bold;
-                            color: white;
-                        }
-                    }
-                    tr:nth-child(even){
-                        background-color: rgb(241, 239, 239);
-                        color: black;
-                    }
-                }
-                .t-calendar{
-                    border: 1px solid rgb(248, 120, 146);
-                    border-radius: 10px;
-                    color: rgb(248, 120, 146);
-                    width: 95%;
-                    position: relative;
-                    margin:20px auto;
-                    padding: 10px;
-                    tr{
-                        td{
-                            background-color: rgb(255, 230, 246);
-                            border-radius: 10px;
-                            padding: 15px 0;
-                            width: 14%;
-                        }
-                        .booked{
-                            background-color: gold;
-                            color: black;
-                        }
-                    }
-                }
-                .button{
-                    margin: 10px 0;
-                    text-align: center;
-                    button{
-                        padding: 10px 15px;
-                        font-weight: bold;
-                        text-transform: capitalize;
-                        background-color: green;
-                        color: white;
-                        border: 0;
                     }
                 }
             }
+
             .year-events{
                 text-align: center;
                 box-shadow: 0px 0px 5px rgb(204, 204, 204);
@@ -307,7 +292,7 @@ body{
                     position: relative;
                     margin: auto;
                     display: grid;
-                    grid-template-columns: 58% 40%;
+                    grid-template-columns: auto;
                     gap: 10px;
                     .assigned{
                         border: 2px solid rgb(255, 230, 246);
@@ -398,7 +383,6 @@ body{
 @media screen and (max-width:700px) {
     body{
         font-size: 2vw;
-        
         .container{
             width: 98%;
             position: relative;
@@ -433,29 +417,58 @@ body{
                         }
                     }
                 }
-                .r-menu{
-                    display: grid;
-                    grid-template-columns: 48% 48%;
-                    gap:10px;
-                    transition:  ease linear 5s;
+                .col{
+                    font-size: 1.5vw;
+                    h2{
+                        font-size: 2.5vw;
+                    }
+                    p{
+                        font-size: 2.5vw;
+                    }
+                }
+                .r-students{
                     width: 100%;
-                    height: max-content;
-                    .col{
-                        font-size: 2vw;
-                        p{
-                            font-size: 3vw;
+                    padding: 10px 0;
+                    margin-top: 10px;
+                    .r-students-h{
+                        padding: 10px 0;
+                        width: inherit;
+                        text-transform: uppercase;
+                        display: grid;
+                        grid-template-columns: auto auto;
+                        div{
+                            text-align: center;
+                            line-height: 4px;
+                        }
+                    }
+                    .student-menu{
+                        width: 100%;
+                        .stu-con{
+                            width: 96%;
+                            position: relative;
+                            margin: auto;
+                            display: grid;
+                            grid-template-columns: auto auto auto auto;
+                            gap: 10px;
+                            .stu-col{
+                                text-align: center;
+                                .stu-col-img{
+                                    background-color: white;
+                                    box-shadow: inset 1px 1px 10px rgb(222, 242, 249);
+                                    padding: 20px 0;
+                                    border-radius: 5px;
+                                    span{
+                                        font-size: 5vw;
+                                        color: rgb(110, 235, 227);
+                                    }
+                                }
+                                h3{
+                                    padding: 5px 0;
+                                }
+                            }
                         }
                     }
                 }
-                .col{
-                    font-size:1.5vw;
-                }
-                .r-students{
-                    table{
-                        font-size: 3vw;
-                    }
-                }
-
                 .year-events{
                     text-align: center;
                     box-shadow: 0px 0px 5px rgb(204, 204, 204);

@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>student portal</title>
+    <title>parent portal</title>
     <link rel="stylesheet" href="plugins/fontawesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="stustyle.css">
+    <link rel="stylesheet" href="parentportal.css">
     <link rel="stylesheet" href="admin.css">
     <script src="jquery-3.3.1.min.js"></script>
     <script src="main.js"></script>
@@ -22,7 +22,7 @@
             <img src="images/logo1.png" alt="">
         </div>
         <div class="txt">
-            <h1>OGIDAN DAVID KAZEEM</h1>
+            <h1>MR/MRS KASALI JOSEPH</h1>
         </div>
     </header>
 
@@ -58,18 +58,13 @@
 
             <div class="menu-list">
                 <a href=""><p class="active" style="background-color: black;"><span class="fa fa-dashboard"></span> &hairsp;&hairsp;<b style="color: goldenrod;">dashboard</b></p></a>
-                <a href=""><p><span class="fa fa-bar-chart"></span> &hairsp;&hairsp;<b >attendance</b></p></a>
-                <a href=""><p><span class="fa fa-money"></span> &hairsp;&hairsp;<b>payment</b></p></a>
-                <a href="timetable.html"><p><span class="fa fa-table"></span> &hairsp;&hairsp;<b>timetable</b></p></a>
-                <a href=""><p><span class="fa fa-book"></span> &hairsp;&hairsp;<b>marks</b></p></a>
-                <a href=""><p><span class="fa fa-keyboard-o"></span> &hairsp;&hairsp;<b>online classes</b></p></a>
-                <a href=""><p><span class="fa fa-book"></span> &hairsp;&hairsp;<b>homework diary</b></p></a>
+                <a href=""><p><span class="fa fa-money"></span> &hairsp;&hairsp;<b >make payment</b></p></a>
+                <a href=""><p><span class="fa fa-user-o"></span> &hairsp;&hairsp;<b>ward(s)</b></p></a>
+                <a href=""><p><span class="fa fa-table"></span> &hairsp;&hairsp;<b>transaction history</b></p></a>
                 <a href=""><p><span class="fa fa-bell"></span> &hairsp;&hairsp;<b>notice board</b></p></a>
-                <a href=""><p><span class="fa fa-folder-open"></span> &hairsp;&hairsp;<b>student material</b></p></a>
-                <a href=""><p><span class="fa fa-file"></span> &hairsp;&hairsp;<b>Leave application</b></p></a>
-                <a href=""><p><span class="fa fa-phone"></span> &hairsp;&hairsp;<b>Contact School</b></p></a>
-                <a href=""><p><span class="fa fa-key"></span> &hairsp;&hairsp;<b>change password</b></p></a>
+                <a href=""><p><span class="fa fa-calendar"></span> &hairsp;&hairsp;<b>year calendar</b></p></a>
                 <a href=""><p><span class="fa fa-power-off"></span> &hairsp;&hairsp;<b>logout now</b></p></a>
+                
             </div>
             
         </div>
@@ -170,67 +165,19 @@
                     <div class="stu-con">
                         <div class="stu-col">
                             <div class="stu-col-img">
-                                <span class="fa fa-bar-chart"></span>
-                            </div>
-                            <h3>Attendance</h3>
-                        </div>
-                        <div class="stu-col">
-                            <div class="stu-col-img">
                                 <span class="fa fa-money"></span>
                             </div>
                             <h3>Payment</h3>
                         </div>
-                        <a href="timetable.html">
-                        <div class="stu-col">
-                            <div class="stu-col-img">
-                                <span class="fa fa-table"></span>
-                            </div>
-                            <h3>Timetable</h3>
-                        </div>
-                    </a>
-                        <div class="stu-col">
-                            <div class="stu-col-img">
-                                <span class="fa fa-book"></span>
-                            </div>
-                            <h3>Marks</h3>
-                        </div>
-                        <div class="stu-col">
-                            <div class="stu-col-img">
-                                <span class="fa fa-keyboard-o"></span>
-                            </div>
-                            <h3>Online Classes</h3>
-                        </div>
-                        <div class="stu-col">
-                            <div class="stu-col-img">
-                                <span class="fa fa-book"></span>
-                            </div>
-                            <h3>Homework Diary</h3>
-                        </div>
+                        
                         <div class="stu-col">
                             <div class="stu-col-img">
                                 <span class="fa fa-bell"></span>
                             </div>
                             <h3>Notice Board</h3>
                         </div>
-                        <div class="stu-col">
-                            <div class="stu-col-img">
-                                <span class="fa fa-folder-open"></span>
-                            </div>
-                            <h3>Student Material</h3>
-                        </div>
                         
-                        <div class="stu-col">
-                            <div class="stu-col-img">
-                                <span class="fa fa-file"></span>
-                            </div>
-                            <h3>Leave application</h3>
-                        </div>
-                        <div class="stu-col">
-                            <div class="stu-col-img">
-                                <span class="fa fa-phone"></span>
-                            </div>
-                            <h3>Contact School</h3>
-                        </div>
+                        
                         <div class="stu-col">
                             <div class="stu-col-img">
                                 <span class="fa fa-key"></span>
@@ -247,17 +194,66 @@
                 </div>
             </div>
             
+            <br> <br>
+            <div class="year-events">
+                <h2>whole year/session events</h2>
+                <div class="year-e-container">
+                    <div class="assigned">
+                       <!-- <h2>assigned events</h2>-->
+                        <table>
+                            <tr>
+                                <th>name</th>
+                                <th>date</th>
+                                <th>time</th>
+                                <th>venue <span class="fa fa-map-marker"></span></th>
+                            </tr>
+                            <tr>
+                                <td>end of the year party <input type="hidden"></td>
+                                <td>31-12-2023 <input type="hidden"></td>
+                                <td>10am - 2pm <input type="hidden"></td>
+                                <td>amusement park  <input type="hidden"> </td>
+                            </tr>
+                            <tr>
+                                <td>end of the year party <input type="hidden"></td>
+                                <td>31-12-2023 <input type="hidden"></td>
+                                <td>10am - 2pm <input type="hidden"></td>
+                                <td>amusement park  <input type="hidden"> </td>
+                            </tr>
+                            <tr>
+                                <td>end of the year party <input type="hidden"></td>
+                                <td>31-12-2023 <input type="hidden"></td>
+                                <td>10am - 2pm <input type="hidden"></td>
+                                <td>amusement park  <input type="hidden"> </td>
+                            </tr>
+                            <tr>
+                                <td>end of the year party <input type="hidden"></td>
+                                <td>31-12-2023 <input type="hidden"></td>
+                                <td>10am - 2pm <input type="hidden"></td>
+                                <td>amusement park  <input type="hidden"> </td>
+                            </tr>
+                            <tr>
+                                <td>end of the year party <input type="hidden"></td>
+                                <td>31-12-2023 <input type="hidden"></td>
+                                <td>10am - 2pm <input type="hidden"></td>
+                                <td>amusement park  <input type="hidden"> </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                   
+                </div>
+            </div>
 
         </div>
     </div>
 
 </div>
-
 <a href="">
     <div class="chats" style="position: fixed; background-color: white; border-radius: 10px; padding: 5px; box-shadow: -2px 2px 2px black; color: green; right: 0%; bottom: 30%; font-size: 40px; text-align: center; cursor: pointer;">
         <p style="font-size: 15px; color: black;"><span class="fa fa-bell"></span></p>
         <span class="fa fa-telegram"></span> </div>
 </a>
+
 
     <div class="mobile-menu">
         <div class="close">
@@ -271,18 +267,13 @@
  
              <div class="menu-list">
                 <a href=""><p class="active" style="background-color: black;"><span class="fa fa-dashboard"></span> &hairsp;&hairsp;<b style="color: goldenrod;">dashboard</b></p></a>
-                <a href=""><p><span class="fa fa-bar-chart"></span> &hairsp;&hairsp;<b >attendance</b></p></a>
-                <a href=""><p><span class="fa fa-money"></span> &hairsp;&hairsp;<b>payment</b></p></a>
-                <a href="timetable.html"><p><span class="fa fa-table"></span> &hairsp;&hairsp;<b>timetable</b></p></a>
-                <a href=""><p><span class="fa fa-book"></span> &hairsp;&hairsp;<b>marks</b></p></a>
-                <a href=""><p><span class="fa fa-keyboard-o"></span> &hairsp;&hairsp;<b>online classes</b></p></a>
-                <a href=""><p><span class="fa fa-book"></span> &hairsp;&hairsp;<b>homework diary</b></p></a>
+                <a href=""><p><span class="fa fa-money"></span> &hairsp;&hairsp;<b >make payment</b></p></a>
+                <a href=""><p><span class="fa fa-user-o"></span> &hairsp;&hairsp;<b>ward(s)</b></p></a>
+                <a href=""><p><span class="fa fa-table"></span> &hairsp;&hairsp;<b>transaction history</b></p></a>
                 <a href=""><p><span class="fa fa-bell"></span> &hairsp;&hairsp;<b>notice board</b></p></a>
-                <a href=""><p><span class="fa fa-folder-open"></span> &hairsp;&hairsp;<b>student material</b></p></a>
-                <a href=""><p><span class="fa fa-file"></span> &hairsp;&hairsp;<b>Leave application</b></p></a>
-                <a href=""><p><span class="fa fa-phone"></span> &hairsp;&hairsp;<b>Contact School</b></p></a>
-                <a href=""><p><span class="fa fa-key"></span> &hairsp;&hairsp;<b>change password</b></p></a>
+                <a href=""><p><span class="fa fa-calendar"></span> &hairsp;&hairsp;<b>year calendar</b></p></a>
                 <a href=""><p><span class="fa fa-power-off"></span> &hairsp;&hairsp;<b>logout now</b></p></a>
+                
             </div>
              
          </div>
