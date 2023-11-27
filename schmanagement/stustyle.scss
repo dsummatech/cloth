@@ -177,6 +177,19 @@ body{
                         }
                     }
                 }
+                .money-menu{
+                    width: 70%;
+                    position: relative;
+                    margin: auto;
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                    .m-money-menu{
+                        text-align: center;
+                        span{
+                            font-size: 50px;
+                        }
+                    }
+                }
             }
             .r-menu{
                 display: grid;

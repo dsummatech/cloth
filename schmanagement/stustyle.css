@@ -182,6 +182,19 @@ body .container .right .money .money-box .money-upper {
 body .container .right .money .money-box .money-middle h2 {
   font-size: 2vw;
 }
+body .container .right .money .money-menu {
+  width: 70%;
+  position: relative;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+body .container .right .money .money-menu .m-money-menu {
+  text-align: center;
+}
+body .container .right .money .money-menu .m-money-menu span {
+  font-size: 50px;
+}
 body .container .right .r-menu {
   display: grid;
   grid-template-columns: auto auto auto auto;

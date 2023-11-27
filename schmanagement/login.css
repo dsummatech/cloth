@@ -24,6 +24,7 @@ body .m-center {
   position: relative;
   margin: auto;
   top: 50px;
+  border-radius: 10px;
 }
 body .m-center label {
   text-transform: capitalize;

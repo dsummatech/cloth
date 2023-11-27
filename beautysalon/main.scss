@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+    color: white;
+    .fixed-body{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-image: url("images/middle1.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        header{
+            position: fixed;
+            background-color: purple;
+            box-shadow: inset 0px -5px 5px white;
+            width: 100%;
+            padding: 2% 0;
+            top: 0;
+            color: white;
+            display: grid;
+            grid-template-columns: 20% 50% auto;
+            gap: 10px;
+            .logo{
+                width: 20%;
+                text-align: center;
+                position: relative;
+                left: 10px;
+            }
+            img{
+                width: 100%;
+            }
+            .menu{
+                text-transform: capitalize;
+                word-spacing: 30px;
+                text-align: center;
+                span{
+                    word-spacing: normal;
+                    cursor: pointer;
+                }
+            }
+            button{
+                background-color: rgb(246, 56, 87);
+                padding: 8px 30px;
+                border: 0;
+                color: white;
+                font-weight: bold;
+                text-transform: capitalize;
+            }
+            .btn{
+                background-color: transparent;
+                padding: 8px 30px;
+                border: 1px solid rgb(246, 56, 87);
+                color: white;
+                font-weight: bold;
+                text-transform: capitalize;
+            }
+            .appo{
+                text-align: center;
+            }
+        }
+        .abs-body{
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            position: absolute;
+            opacity: 50%;
+        }
+        .rel-body{
+            height: 60%;
+            width: 80%;
+            top: 25%;
+            position: relative;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            gap: 0px;
+            border: 1px solid rgb(246, 56, 87);
+            font-size: 1vw;
+            .rel-body-lt{
+                background-color: black;
+                .rel-body-lt-wr{
+                    width: 90%;
+                    position: relative;
+                    top: 5%;
+                    margin: auto;
+                    .line{
+                        background-color: rgb(246, 56, 87);
+                        width: 10%;
+                        height: 2px;
+                    }
+                    button{
+                        background-color: rgb(246, 56, 87);
+                        padding: 8px 30px;
+                        border: 0;
+                        color: white;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .rel-body-rt{
+                background-image: url("images/slimg1.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                animation: slide 20s infinite;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    body{
+        .fixed-body{
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-image: url("images/middle1.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            header{
+                position: fixed;
+                background-color: purple;
+                box-shadow: inset 0px -5px 5px white;
+                width: 100%;
+                padding: 2% 0;
+                top: 0;
+                color: white;
+                display: grid;
+                grid-template-columns: 80% 20%;
+                gap: 10px;
+                .logo{
+                    width: 17%;
+                    text-align: center;
+                    position: relative;
+                    left: 10px;
+                }
+                img{
+                    width: 100%;
+                }
+                .m-menu{
+                    text-align: center;
+                    width: 35px;
+                    margin: auto;
+                    position: relative;
+                    padding: 3px;
+                    border: 1px solid rgb(246, 56, 87);
+                    right: 10px;
+                    cursor: pointer;
+                    .ham{
+                        background-color: white;
+                        width: 100%;
+                        height: 3px;
+                        margin: 4px 0;
+                    }
+                }
+                .menu{
+                    text-transform: capitalize;
+                    word-spacing: 30px;
+                    text-align: center;
+                    display: none;
+                    span{
+                        word-spacing: normal;
+                        cursor: pointer;
+                    }
+                }
+                button{
+                    background-color: rgb(246, 56, 87);
+                    padding: 8px 30px;
+                    border: 0;
+                    color: white;
+                    font-weight: bold;
+                    text-transform: capitalize;
+                }
+                .btn{
+                    background-color: transparent;
+                    padding: 8px 30px;
+                    border: 1px solid rgb(246, 56, 87);
+                    color: white;
+                    font-weight: bold;
+                    text-transform: capitalize;
+                }
+                .appo{
+                    text-align: center;
+                    display: none;
+                }
+            }
+            .abs-body{
+                height: 100%;
+                width: 100%;
+                background-color: black;
+                position: absolute;
+                opacity: 50%;
+            }
+            .rel-body{
+                height: 60%;
+                width: 80%;
+                top: 25%;
+                position: relative;
+                margin: auto;
+                display: grid;
+                grid-template-columns: 100%;
+                gap: 0px;
+                border: 1px solid rgb(246, 56, 87);
+                font-size: 2.5vw;
+                .rel-body-lt{
+                    background-color: black;
+                }
+                .rel-body-rt{
+                    background-image: url("images/slimg1.jpg");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    animation: slide 20s infinite;
+                    padding: 20% 0;
+                }
+            }
+        }
+    }
+}
+
+@keyframes slide {
+    0%{background-image: url("images/slimg1.jpg");}
+    20%{background-image: url("images/slimg1.jpg");}
+    24%{background-image: url("images/slimg2.jpg");}
+    40%{background-image: url("images/slimg2.jpg");}
+    44%{background-image: url("images/slimg3.jpg");}
+    60%{background-image: url("images/slimg3.jpg");}
+    64%{background-image: url("images/slimg4.jpg");}
+    80%{background-image: url("images/slimg4.jpg");}
+    84%{background-image: url("images/slimg5.jpg");}
+    100%{background-image: url("images/slimg5.jpg");}
+}
