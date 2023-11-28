@@ -17,7 +17,7 @@ body{
         background-repeat: no-repeat;
         background-size: cover;
         animation: bc-slide 20s infinite;
-        top: 20%;
+        top: 15%;
         header{
             position: fixed;
             width: 100%;
@@ -96,6 +96,24 @@ body{
                 right: 50%;
                 position: relative;
                 transition: .8s ease;
+                .mini-bo{
+                    display: none;
+                }
+                button{
+                    border: 2px solid rgb(254, 65, 97);
+                    color: white;
+                    background-color: transparent;
+                    padding: 5px 3px;
+                    margin: 5px;
+                    font-size: 1.5vw;
+                }
+                .bo{
+                    border: 2px solid rgb(254, 65, 97);
+                    color: white;
+                    background-color: rgb(254, 65, 97);
+                    padding: 5px 3px;
+                    margin: 5px;
+                }
                 .rel-body-lt-wr{
                     width: 90%;
                     position: relative;
@@ -171,6 +189,22 @@ body{
     }
 }
 
+@media screen and (max-width:1050px) {
+    body{
+        .fixed-body{
+            top: 8%;
+        }
+    }
+}
+
+@media screen and (max-width:900px) {
+    body{
+        .fixed-body{
+            top: 5%;
+        }
+    }
+}
+
 @media screen and (max-width:600px) {
     body{
         .fixed-body{
@@ -182,7 +216,7 @@ body{
             background-repeat: no-repeat;
             background-size: cover;
             animation: bc-slide 20s infinite;
-            top: 15%;
+            top: 11%;
             header{
                 position: fixed;
                 width: 100%;
@@ -272,6 +306,9 @@ body{
                     background-image: linear-gradient(to bottom right,black, purple, black,  );
                     right: 50%;
                     padding: 15px 0;
+                    .mini-bo{
+                        display: block;
+                    }
                     button{
                         font-size: 2vw;
                     }

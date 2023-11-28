@@ -77,7 +77,8 @@ body{
             opacity: 70%;
         }
         .rel-body{
-            height: 60%;
+            height: max-content;
+            min-height: 60%;
             width: 80%;
             top: 25%;
             position: relative;
@@ -93,10 +94,28 @@ body{
                 right: 50%;
                 position: relative;
                 transition: .8s ease;
+                padding: 10px 0;
+                .mini-bo{
+                    display: none;
+                }
+                button{
+                    border: 2px solid rgb(254, 65, 97);
+                    color: white;
+                    background-color: transparent;
+                    padding: 5px 3px;
+                    margin: 5px;
+                    font-size: 1.5vw;
+                }
+                .bo{
+                    border: 2px solid rgb(254, 65, 97);
+                    color: white;
+                    background-color: rgb(254, 65, 97);
+                    padding: 5px 3px;
+                    margin: 5px;
+                }
                 .rel-body-lt-wr{
                     width: 90%;
                     position: relative;
-                    top: 5%;
                     margin: auto;
                     color: white;
                     .line{
@@ -215,7 +234,7 @@ body{
                 opacity: 70%;
             }
             .rel-body{
-                height: 60%;
+                height: max-content;
                 width: 80%;
                 top: 25%;
                 position: relative;
@@ -228,6 +247,9 @@ body{
                 .rel-body-lt{
                     background-image: linear-gradient(to bottom right,black, purple, black,  );
                     right: 50%;
+                    .mini-bo{
+                        display: block;
+                    }
                 }
                 .rel-body-rt{
                     background-image: url("images/slimg1.jpg");

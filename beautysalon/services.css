@@ -19,7 +19,7 @@ body .fixed-body {
   background-repeat: no-repeat;
   background-size: cover;
   animation: bc-slide 20s infinite;
-  top: 20%;
+  top: 15%;
 }
 body .fixed-body header {
   position: fixed;
@@ -102,6 +102,24 @@ body .fixed-body .rel-body .rel-body-lt {
   position: relative;
   transition: 0.8s ease;
 }
+body .fixed-body .rel-body .rel-body-lt .mini-bo {
+  display: none;
+}
+body .fixed-body .rel-body .rel-body-lt button {
+  border: 2px solid rgb(254, 65, 97);
+  color: white;
+  background-color: transparent;
+  padding: 5px 3px;
+  margin: 5px;
+  font-size: 1.5vw;
+}
+body .fixed-body .rel-body .rel-body-lt .bo {
+  border: 2px solid rgb(254, 65, 97);
+  color: white;
+  background-color: rgb(254, 65, 97);
+  padding: 5px 3px;
+  margin: 5px;
+}
 body .fixed-body .rel-body .rel-body-lt .rel-body-lt-wr {
   width: 90%;
   position: relative;
@@ -174,6 +192,16 @@ body .fixed-body .rel-body .rel-body-rt .rel-body-rt-box .v-m button {
   color: black;
 }
 
+@media screen and (max-width: 1050px) {
+  body .fixed-body {
+    top: 8%;
+  }
+}
+@media screen and (max-width: 900px) {
+  body .fixed-body {
+    top: 5%;
+  }
+}
 @media screen and (max-width: 600px) {
   body .fixed-body {
     position: absolute;
@@ -184,7 +212,7 @@ body .fixed-body .rel-body .rel-body-rt .rel-body-rt-box .v-m button {
     background-repeat: no-repeat;
     background-size: cover;
     animation: bc-slide 20s infinite;
-    top: 15%;
+    top: 11%;
   }
   body .fixed-body header {
     position: fixed;
@@ -277,6 +305,9 @@ body .fixed-body .rel-body .rel-body-rt .rel-body-rt-box .v-m button {
     background-image: linear-gradient(to bottom right, black, purple, black);
     right: 50%;
     padding: 15px 0;
+  }
+  body .fixed-body .rel-body .rel-body-lt .mini-bo {
+    display: block;
   }
   body .fixed-body .rel-body .rel-body-lt button {
     font-size: 2vw;
