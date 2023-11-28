@@ -10,10 +10,11 @@ body .fixed-body {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-image: url("images/middle1.jpg");
-  background-position: center;
+  background-image: url("images/middle4.jpg");
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  animation: bc-slide 20s infinite;
 }
 body .fixed-body header {
   position: fixed;
@@ -25,7 +26,8 @@ body .fixed-body header {
   color: white;
   display: grid;
   grid-template-columns: 20% 50% auto;
-  gap: 10px;
+  gap: 0 10px;
+  font-size: 1.2vw;
 }
 body .fixed-body header .logo {
   width: 20%;
@@ -47,15 +49,16 @@ body .fixed-body header .menu span {
 }
 body .fixed-body header button {
   background-color: rgb(246, 56, 87);
-  padding: 8px 30px;
+  padding: 8px 13px;
   border: 0;
   color: white;
   font-weight: bold;
   text-transform: capitalize;
+  font-size: 1vw;
 }
 body .fixed-body header .btn {
   background-color: transparent;
-  padding: 8px 30px;
+  padding: 8px 13px;
   border: 1px solid rgb(246, 56, 87);
   color: white;
   font-weight: bold;
@@ -80,11 +83,15 @@ body .fixed-body .rel-body {
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 0px;
-  border: 1px solid rgb(246, 56, 87);
+  border: 1px solid white;
   font-size: 1vw;
+  transition: 0.8s ease;
 }
 body .fixed-body .rel-body .rel-body-lt {
-  background-color: black;
+  background-image: radial-gradient(black, black, black, black, black, black, purple);
+  right: 50%;
+  position: relative;
+  transition: 0.8s ease;
 }
 body .fixed-body .rel-body .rel-body-lt .rel-body-lt-wr {
   width: 90%;
@@ -110,6 +117,9 @@ body .fixed-body .rel-body .rel-body-rt {
   background-repeat: no-repeat;
   background-size: cover;
   animation: slide 20s infinite;
+  transition: 0.8s ease;
+  position: relative;
+  left: 50%;
 }
 
 @media screen and (max-width: 600px) {
@@ -117,10 +127,11 @@ body .fixed-body .rel-body .rel-body-rt {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-image: url("images/middle1.jpg");
-    background-position: center;
+    background-image: url("images/middle4.jpg");
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    animation: bc-slide 20s infinite;
   }
   body .fixed-body header {
     position: fixed;
@@ -205,11 +216,11 @@ body .fixed-body .rel-body .rel-body-rt {
     display: grid;
     grid-template-columns: 100%;
     gap: 0px;
-    border: 1px solid rgb(246, 56, 87);
+    border: 1px solid white;
     font-size: 2.5vw;
   }
   body .fixed-body .rel-body .rel-body-lt {
-    background-color: black;
+    background-image: radial-gradient(black, black, black, black, black, black, purple);
   }
   body .fixed-body .rel-body .rel-body-rt {
     background-image: url("images/slimg1.jpg");
@@ -250,5 +261,37 @@ body .fixed-body .rel-body .rel-body-rt {
   }
   100% {
     background-image: url("images/slimg5.jpg");
+  }
+}
+@keyframes bc-slide {
+  0% {
+    background-image: url("images/middle4.jpg");
+  }
+  20% {
+    background-image: url("images/middle4.jpg");
+  }
+  24% {
+    background-image: url("images/middle4.jpg");
+  }
+  40% {
+    background-image: url("images/slide2.jpg");
+  }
+  44% {
+    background-image: url("images/slide2.jpg");
+  }
+  60% {
+    background-image: url("images/slide3.png");
+  }
+  64% {
+    background-image: url("images/slide3.png");
+  }
+  80% {
+    background-image: url("images/slide4.jpg");
+  }
+  84% {
+    background-image: url("images/slide4.jpg");
+  }
+  100% {
+    background-image: url("images/slide4.jpg");
   }
 }/*# sourceMappingURL=main.css.map */
