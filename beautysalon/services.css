@@ -11,14 +11,15 @@ body a {
   color: unset;
 }
 body .fixed-body {
-  position: fixed;
+  position: absolute;
   width: 100%;
-  height: 100%;
+  height: 40%;
   background-image: url("images/middle4.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   animation: bc-slide 20s infinite;
+  top: 20%;
 }
 body .fixed-body header {
   position: fixed;
@@ -30,6 +31,7 @@ body .fixed-body header {
   grid-template-columns: 20% 50% auto;
   gap: 0 10px;
   font-size: 1.2vw;
+  background-color: black;
 }
 body .fixed-body header .logo {
   width: 20%;
@@ -49,8 +51,9 @@ body .fixed-body header .menu span {
   word-spacing: normal;
   cursor: pointer;
   background-color: purple;
-  padding: 35px 10px;
+  padding: 20px 5px;
   border-bottom: 1px solid white;
+  margin: 0;
 }
 body .fixed-body header button {
   background-color: rgb(254, 65, 97);
@@ -80,8 +83,9 @@ body .fixed-body .abs-body {
   opacity: 70%;
 }
 body .fixed-body .rel-body {
-  height: 60%;
-  width: 80%;
+  height: -moz-max-content;
+  height: max-content;
+  width: 90%;
   top: 25%;
   position: relative;
   margin: auto;
@@ -101,9 +105,18 @@ body .fixed-body .rel-body .rel-body-lt {
 body .fixed-body .rel-body .rel-body-lt .rel-body-lt-wr {
   width: 90%;
   position: relative;
-  top: 5%;
-  margin: auto;
+  margin: 5% auto;
   color: white;
+}
+body .fixed-body .rel-body .rel-body-lt .rel-body-lt-wr .list {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  margin: 5px 0;
+  font-weight: bold;
+}
+body .fixed-body .rel-body .rel-body-lt .rel-body-lt-wr .list .li-ic {
+  text-align: center;
+  color: rgb(254, 65, 97);
 }
 body .fixed-body .rel-body .rel-body-lt .rel-body-lt-wr .line {
   background-color: rgb(254, 65, 97);
@@ -129,18 +142,49 @@ body .fixed-body .rel-body .rel-body-rt {
   transition: 0.8s ease;
   position: relative;
   left: 50%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 2px;
+  height: -moz-max-content;
+  height: max-content;
+}
+body .fixed-body .rel-body .rel-body-rt .rel-body-rt-box {
+  background-color: white;
+}
+body .fixed-body .rel-body .rel-body-rt .rel-body-rt-box img {
+  width: 100%;
+}
+body .fixed-body .rel-body .rel-body-rt .rel-body-rt-box .v-m {
+  background-color: purple;
+  padding: 15px 5px;
+  width: 80%;
+  margin: auto;
+  position: relative;
+  top: -10px;
+  text-align: center;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+body .fixed-body .rel-body .rel-body-rt .rel-body-rt-box .v-m button {
+  width: 80%;
+  padding: 6px 0;
+  border: 0;
+  background-color: white;
+  color: black;
 }
 
 @media screen and (max-width: 600px) {
   body .fixed-body {
-    position: fixed;
+    position: absolute;
     width: 100%;
-    height: 100%;
+    height: 40%;
     background-image: url("images/middle4.jpg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     animation: bc-slide 20s infinite;
+    top: 15%;
   }
   body .fixed-body header {
     position: fixed;
@@ -151,6 +195,7 @@ body .fixed-body .rel-body .rel-body-rt {
     display: grid;
     grid-template-columns: 80% 20%;
     gap: 10px;
+    background-color: black;
   }
   body .fixed-body header .logo {
     width: 17%;
@@ -216,9 +261,10 @@ body .fixed-body .rel-body .rel-body-rt {
     opacity: 70%;
   }
   body .fixed-body .rel-body {
-    height: 60%;
-    width: 80%;
-    top: 25%;
+    height: -moz-max-content;
+    height: max-content;
+    width: 90%;
+    top: 20%;
     position: relative;
     margin: auto;
     display: grid;
@@ -230,6 +276,10 @@ body .fixed-body .rel-body .rel-body-rt {
   body .fixed-body .rel-body .rel-body-lt {
     background-image: linear-gradient(to bottom right, black, purple, black);
     right: 50%;
+    padding: 15px 0;
+  }
+  body .fixed-body .rel-body .rel-body-lt button {
+    font-size: 2vw;
   }
   body .fixed-body .rel-body .rel-body-rt {
     background-image: url("images/slimg1.jpg");
@@ -237,7 +287,8 @@ body .fixed-body .rel-body .rel-body-rt {
     background-repeat: no-repeat;
     background-size: cover;
     animation: slide 20s infinite;
-    padding: 20% 0;
+    padding: 0;
+    grid-template-columns: 49.3% 50%;
   }
 }
 @keyframes slide {
@@ -303,4 +354,4 @@ body .fixed-body .rel-body .rel-body-rt {
   100% {
     background-image: url("images/slide4.jpg");
   }
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=services.css.map */
