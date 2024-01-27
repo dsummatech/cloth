@@ -1,7 +1,12 @@
 $pink:rgb(253, 229, 234);
 $purple:rgb(253, 209, 248);
 
+
 @media screen and (max-width:900px) {
+    a{
+        text-decoration: none;
+        color: unset;
+    }
     body{
         background-color: #ffffff;
         .mobile_menu{

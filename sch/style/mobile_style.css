@@ -1,4 +1,8 @@
 @media screen and (max-width: 900px) {
+  a {
+    text-decoration: none;
+    color: unset;
+  }
   body {
     background-color: #ffffff;
   }

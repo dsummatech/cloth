@@ -4,6 +4,10 @@ $purple:rgb(253, 209, 248);
 *{
     margin: 0;
 }
+a{
+    text-decoration: none;
+    color: unset;
+}
 body{
     background-color: #ffffff;
     font-size: medium;
