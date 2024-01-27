@@ -169,6 +169,15 @@ body .body_cont_cont .body_cont_cont_right .dash_cont .dash_sta .balance .figure
   margin: auto;
   padding: 10px 0;
 }
+body .body_cont_cont .body_cont_cont_right .dash_cont .dash_sta .balance .figure .bal {
+  display: none;
+}
+body .body_cont_cont .body_cont_cont_right .dash_cont .dash_sta .balance .figure .demo_bal {
+  display: inline;
+}
+body .body_cont_cont .body_cont_cont_right .dash_cont .dash_sta .balance .figure .fa-eye {
+  cursor: pointer;
+}
 body .body_cont_cont .body_cont_cont_right .dash_cont .dash_sta .balance .figure .tran {
   padding: 10px;
   box-shadow: 0px 0px 10px rgb(224, 223, 223);

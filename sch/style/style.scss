@@ -152,6 +152,15 @@ body{
                             position: relative;
                             margin: auto;
                             padding: 10px 0;
+                            .bal{
+                                display: none;
+                            }
+                            .demo_bal{
+                                display: inline;
+                            }
+                            .fa-eye{
+                                cursor: pointer;
+                            }
                             .tran{
                                 padding: 10px;
                                 box-shadow: 0px 0px 10px rgb(224, 223, 223);
