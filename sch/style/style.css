@@ -86,7 +86,8 @@ body .body_cont_cont .body_cont_cont_right .right_handler .handler .ham {
   height: max-content;
   width: 40px;
   padding: 5px;
-  background-color: black;
+  background-color: rgb(166, 202, 246);
+  border-radius: 3px;
   position: relative;
   top: 6vw;
   cursor: pointer;
@@ -95,6 +96,7 @@ body .body_cont_cont .body_cont_cont_right .right_handler .handler .ham .burger 
   background-color: white;
   margin: 4px 0;
   padding: 2px 0;
+  border-radius: 5px;
 }
 body .body_cont_cont .body_cont_cont_right .dash_cont {
   width: 100%;

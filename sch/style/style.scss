@@ -76,7 +76,8 @@ body{
                         height: max-content;
                         width: 40px;
                         padding: 5px;
-                        background-color: black;
+                        background-color: $blue;
+                        border-radius: 3px;
                         position: relative;
                         top: 6vw;
                         cursor: pointer;
@@ -84,6 +85,7 @@ body{
                             background-color: white;
                             margin: 4px 0;
                             padding: 2px 0;
+                            border-radius: 5px;
                         }
                     }
                 }
