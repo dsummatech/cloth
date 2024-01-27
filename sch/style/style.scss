@@ -1,5 +1,6 @@
 $pink:rgb(253, 229, 234);
 $purple:rgb(253, 209, 248);
+$blue: rgb(166, 202, 246);
 
 *{
     margin: 0;
@@ -136,7 +137,7 @@ body{
                             position: relative;
                             margin: auto;
                             padding: 10% 1%;
-                            background-color: $pink;
+                            background-color: $blue;
                             cursor: pointer;
                         }
                     }

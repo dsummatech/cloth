@@ -1,5 +1,6 @@
 $pink:rgb(253, 229, 234);
 $purple:rgb(253, 209, 248);
+$blue: rgb(166, 202, 246);
 
 
 @media screen and (max-width:900px) {
@@ -156,7 +157,7 @@ $purple:rgb(253, 209, 248);
                                 position: relative;
                                 margin: auto;
                                 padding: 10% 1%;
-                                background-color: $pink;
+                                background-color: $blue;
                             }
                         }
                         table{
