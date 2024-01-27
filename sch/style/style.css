@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #ffffff;
+  font-size: medium;
+}
+body .mobile_menu {
+  display: none;
+}
+body .body_cont {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+}
+body .body_cont_cont {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  position: relative;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 30% 63%;
+  gap: 2%;
+}
+body .body_cont_cont .body_cont_cont_left {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 10px 5px;
+  color: white;
+  position: relative;
+}
+body .body_cont_cont .body_cont_cont_left .img_cont {
+  width: 90%;
+  height: -moz-max-content;
+  height: max-content;
+  position: relative;
+  margin: auto;
+}
+body .body_cont_cont .body_cont_cont_left .img_cont img {
+  width: 100%;
+}
+body .body_cont_cont .body_cont_cont_left .port_menu {
+  width: 95%;
+  position: relative;
+  margin: auto;
+  height: -moz-max-content;
+  height: max-content;
+}
+body .body_cont_cont .body_cont_cont_left .port_menu .port_menu_o {
+  display: grid;
+  grid-template-columns: 10% auto 10%;
+  margin: 30px 0;
+  cursor: pointer;
+}
+body .body_cont_cont .body_cont_cont_right {
+  background-color: white;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 10px 8px;
+}
+body .body_cont_cont .body_cont_cont_right .right_handler {
+  display: none;
+}
+body .body_cont_cont .body_cont_cont_right .right_handler .handler {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+body .body_cont_cont .body_cont_cont_right .right_handler .handler .logo {
+  width: 30%;
+}
+body .body_cont_cont .body_cont_cont_right .right_handler .handler .logo img {
+  width: 100%;
+}
+body .body_cont_cont .body_cont_cont_right .right_handler .handler .ham {
+  height: -moz-max-content;
+  height: max-content;
+  width: 40px;
+  padding: 5px;
+  background-color: black;
+  position: relative;
+  top: 6vw;
+  cursor: pointer;
+}
+body .body_cont_cont .body_cont_cont_right .right_handler .handler .ham .burger {
+  background-color: white;
+  margin: 4px 0;
+  padding: 2px 0;
+}
+body .body_cont_cont .body_cont_cont_right .dash_cont {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+}
+body .body_cont_cont .body_cont_cont_right .dash_cont .dash_cont_cont {
+  width: 95%;
+  position: relative;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  gap: 2%;
+}
+body .body_cont_cont .body_cont_cont_right .dash_cont .dash_cont_cont .dash_img {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+}
+body .body_cont_cont .body_cont_cont_right .dash_cont .dash_cont_cont .dash_img img {
+  width: 100%;
+}
+body .body_cont_cont .body_cont_cont_right .dash_cont .dash_cont_cont .dash_info {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+}
+body .body_cont_cont .body_cont_cont_right .dash_cont .dash_cont_cont .dash_info .p {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% auto;
+  gap: 5px;
+  margin: 10px 0;
+}
+body .body_cont_cont .body_cont_cont_right .dash_cont .dash_cont_cont .dash_info .p b {
+  text-align: left;
+}
+body .body_cont_cont .body_cont_cont_right .dash_cont .dash_sta {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+}
+body .body_cont_cont .body_cont_cont_right .dash_cont .dash_sta .body_menu {
+  width: 90%;
+  height: -moz-max-content;
+  height: max-content;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  gap: 5px;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+body .body_cont_cont .body_cont_cont_right .dash_cont .dash_sta .body_menu .body_menu_list {
+  width: 90%;
+  position: relative;
+  margin: auto;
+  padding: 10% 1%;
+  background-color: rgb(253, 229, 234);
+  cursor: pointer;
+}
+body .body_cont_cont .body_cont_cont_right .dash_cont .dash_sta .balance {
+  padding: 10px 0;
+  box-shadow: 0px 0px 10px rgb(224, 223, 223);
+  border-radius: 10px;
+}
+body .body_cont_cont .body_cont_cont_right .dash_cont .dash_sta .balance .figure {
+  width: 80%;
+  position: relative;
+  margin: auto;
+  padding: 10px 0;
+}
+body .body_cont_cont .body_cont_cont_right .dash_cont .dash_sta .balance .figure .tran {
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgb(224, 223, 223);
+  width: -moz-max-content;
+  width: max-content;
+  margin: 15px 0;
+  position: relative;
+  color: purple;
+  cursor: pointer;
+}
+body .body_cont_cont .body_cont_cont_right .dash_cont .dash_sta table {
+  width: 100%;
+  border: 1px solid blue;
+  border-collapse: collapse;
+  text-align: center;
+}
+body .body_cont_cont .body_cont_cont_right .dash_cont .dash_sta table tr th {
+  padding: 10px 0;
+}
+body .body_cont_cont .body_cont_cont_right .dash_cont .dash_sta table tr:nth-child(even) {
+  background-color: rgb(253, 229, 234);
+}
+body .body_cont_cont .body_cont_cont_right .dash_cont .dash_sta table tr:nth-child(odd) {
+  background-color: rgb(253, 209, 248);
+}/*# sourceMappingURL=style.css.map */

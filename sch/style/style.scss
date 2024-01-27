@@ -1,0 +1,190 @@
+$pink:rgb(253, 229, 234);
+$purple:rgb(253, 209, 248);
+
+*{
+    margin: 0;
+}
+body{
+    background-color: #ffffff;
+    font-size: medium;
+    .mobile_menu{
+        display: none;
+    }
+    .body_cont{
+        width: 100%;
+        height: max-content;
+    }
+    .body_cont_cont{
+        width: 100%;
+        height: max-content;
+        position: relative;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 30% 63%;
+        gap: 2%;
+        .body_cont_cont_left{
+            background-color: rgb(0, 0, 0);
+            width: 100%;
+            height: max-content;
+            padding: 10px 5px;
+            color: white;
+            position: relative;
+            .img_cont{
+                width: 90%;
+                height: max-content;
+                position: relative;
+                margin: auto;
+                img{
+                    width: 100%;
+                }
+            }
+            .port_menu{
+                width: 95%;
+                position: relative;
+                margin: auto;
+                height: max-content;
+                .port_menu_o{
+                    display: grid;
+                    grid-template-columns: 10% auto 10%;
+                    margin: 30px 0;
+                    cursor: pointer;
+                }
+            }
+        }
+        .body_cont_cont_right{
+            background-color: white;
+            width: 100%;
+            height: max-content;
+            padding: 10px 8px;
+            .right_handler{
+                display: none;
+                .handler{
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    .logo{
+                        width: 30%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .ham{
+                        height: max-content;
+                        width: 40px;
+                        padding: 5px;
+                        background-color: black;
+                        position: relative;
+                        top: 6vw;
+                        cursor: pointer;
+                        .burger{
+                            background-color: white;
+                            margin: 4px 0;
+                            padding: 2px 0;
+                        }
+                    }
+                }
+            }
+            .dash_cont{
+                width: 100%;
+                height: max-content;
+                .dash_cont_cont{
+                    width: 95%;
+                    position: relative;
+                    margin: auto;
+                    display: grid;
+                    grid-template-columns: 45% 45%;
+                    gap: 2%;
+                    .dash_img{
+                        width: 100%;
+                        height: max-content;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .dash_info{
+                        width: 100%;
+                        height: max-content;
+                        .p{
+                            width: 100%;
+                            display: grid;
+                            grid-template-columns: 40% auto;
+                            gap: 5px;
+                            margin: 10px 0;
+                            b{
+                                text-align:left;
+                            }
+                        }
+                    }
+                }
+                .dash_sta{
+                    width: 100%;
+                    height: max-content;
+                    .body_menu{
+                        width: 90%;
+                        height: max-content;
+                        display: grid;
+                        grid-template-columns: 25% 25% 25% 25%;
+                        gap: 5px;
+                        position: relative;
+                        margin: auto;
+                        text-align: center;
+                        .body_menu_list{
+                            width: 90%;
+                            position: relative;
+                            margin: auto;
+                            padding: 10% 1%;
+                            background-color: $pink;
+                            cursor: pointer;
+                        }
+                    }
+                    .balance{
+                        padding: 10px 0;
+                        box-shadow: 0px 0px 10px rgb(224, 223, 223);
+                        border-radius: 10px;
+                        .figure{
+                            width: 80%;
+                            position: relative;
+                            margin: auto;
+                            padding: 10px 0;
+                            .tran{
+                                padding: 10px;
+                                box-shadow: 0px 0px 10px rgb(224, 223, 223);
+                                width: max-content;
+                                margin: 15px 0;
+                                position: relative;
+                                color: purple;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    table{
+                        width: 100%;
+                        border: 1px solid blue;
+                        border-collapse: collapse;
+                        text-align: center;
+                        tr{
+                            th{
+                                padding: 10px 0;
+                            }
+                        }
+                        tr:nth-child(even){
+                            background-color: $pink;
+                        }
+                        tr:nth-child(odd){
+                            background-color: $purple;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
