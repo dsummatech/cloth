@@ -209,7 +209,7 @@ body .body_cont_cont .body_cont_cont_right .dash_cont .dash_sta .notice_board .b
 }
 body .body_cont_cont .body_cont_cont_right .dash_cont .dash_sta .notice_board .board .notice .top {
   padding: 10px;
-  background-color: black;
+  background-color: rgb(59, 59, 59);
   color: white;
 }
 body .body_cont_cont .body_cont_cont_right .dash_cont .dash_sta .notice_board .board .notice .notice_con {
