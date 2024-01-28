@@ -1,0 +1,216 @@
+$pink:rgb(253, 229, 234);
+$purple:rgb(253, 209, 248);
+$blue: rgb(166, 202, 246);
+$lightgreen:rgb(0, 255, 0);
+$darkgreen:darkgreen;
+$darkred:darkred;
+$white:#ffffff;
+
+
+@media screen and (max-width:900px) {
+    a{
+        text-decoration: none;
+        color: unset;
+    }
+    body{
+        background-color: #ffffff;
+        .mobile_menu{
+            position: fixed;
+            height: 100%;
+            overflow-y: scroll;
+            display: none;
+            background-color: black;
+            .body_cont_cont_left{
+                background-color: rgb(0, 0, 0);
+                width: 100%;
+                height: max-content;
+                padding: 10px 0px;
+                color: white;
+                .img_cont{
+                    width: 50%;
+                    height: max-content;
+                    position: relative;
+                    margin: auto;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .port_menu{
+                    width: 95%;
+                    position: relative;
+                    margin: auto;
+                    height: max-content;
+                    .port_menu_o{
+                        display: grid;
+                        grid-template-columns: 10% auto 10%;
+                        margin: 30px 0;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .body_cont{
+            width: 100%;
+            height: max-content;
+            position: absolute;
+        }
+        .body_cont_cont{
+            width: 95%;
+            height: max-content;
+            position: relative;
+            margin: auto;
+            display: block;
+            //grid-template-columns: 30% 63%;
+            //gap: 2%;
+            .body_cont_cont_left{
+                background-color: black;
+                width: 100%;
+                height: max-content;
+                padding: 10px 5px;
+                display: none;
+                .img_cont{
+                    width: 90%;
+                    height: max-content;
+                    position: relative;
+                    margin: auto;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .body_cont_cont_right{
+                background-color: white;
+                width: 96%;
+                position: relative;
+                margin: auto;
+                height: max-content;
+                padding: 10px 0px;
+                .right_handler{
+                    display: block;
+                    .handler{
+                        display: grid;
+                        grid-template-columns: auto auto;
+                        .logo{
+                            width: 30%;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        .ham{
+                            height: max-content;
+                            width: 40px;
+                            padding: 5px;
+                            background-color: $blue;
+                            border-radius: 3px;
+                            position: relative;
+                            top: 6vw;
+                            cursor: pointer;
+                            .burger{
+                                background-color: white;
+                                margin: 4px 0;
+                                padding: 2px 0;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+                .dash_cont{
+                    width: 100%;
+                    height: max-content;
+                    .dash_cont_cont{
+                        width: 95%;
+                        position: relative;
+                        margin: auto;
+                        display: block;
+                        //grid-template-columns: auto;
+                        //gap: 2%;
+                        .dash_img{
+                            width: 100%;
+                            height: max-content;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        .dash_info{
+                            width: 100%;
+                            height: max-content;
+                            .p{
+                                width: 100%;
+                                display: grid;
+                                grid-template-columns: 40% auto;
+                                gap: 5px;
+                                margin: 10px 0;
+                                b{
+                                    text-align:left;
+                                }
+                            }
+                        }
+                    }
+                    .reg_form_nftn{
+                        padding: 20px 5px;
+                        text-align: center;
+                        .reg_list{
+                            width: 70%;
+                            position: relative;
+                            margin: auto;
+                            text-align: center;
+                            display: grid;
+                            grid-template-columns: 100%;
+                            gap: 5% 0;
+                            div{
+                                padding: 30px 0px;
+                                color: $white;
+                                font-weight: bold;
+                            }
+                            .reg{
+                                background-color: $darkgreen;
+                            }
+                            .del{
+                                background-color: $darkred;
+                            }
+                        }
+                    }
+                    .dash_sta{
+                        width: 100%;
+                        height: max-content;
+                        .body_menu{
+                            width: 95%;
+                            height: max-content;
+                            display: grid;
+                            grid-template-columns: 50% 50%;
+                            gap: 5px 2px;
+                            position: relative;
+                            margin: auto;
+                            text-align: center;
+                            .body_menu_list{
+                                width: 95%;
+                                position: relative;
+                                margin: auto;
+                                padding: 10% 1%;
+                                background-color: $blue;
+                            }
+                        }
+                        table{
+                            width: 100%;
+                            border: 1px solid blue;
+                            border-collapse: collapse;
+                            text-align: center;
+                            font-size: 3vw;
+                            tr{
+                                th{
+                                    padding: 10px 0;
+                                }
+                            }
+                            tr:nth-child(even){
+                                background-color: $pink;
+                            }
+                            tr:nth-child(odd){
+                                background-color: $purple;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -165,6 +165,36 @@ body .body_cont_cont .body_cont_cont_right .dash_cont .add_form .a_d div .rej {
 body .body_cont_cont .body_cont_cont_right .dash_cont .add_form .a_d div .acc {
   background-color: darkgreen;
 }
+body .body_cont_cont .body_cont_cont_right .dash_cont .reg_form_nftn {
+  padding: 20px 5px;
+  text-align: center;
+  width: 90%;
+  position: relative;
+  margin: auto;
+  background-color: rgb(0, 255, 0);
+}
+body .body_cont_cont .body_cont_cont_right .dash_cont .reg_form_nftn .reg_list {
+  width: 70%;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  gap: 5%;
+}
+body .body_cont_cont .body_cont_cont_right .dash_cont .reg_form_nftn .reg_list div {
+  padding: 30px 5px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 5px;
+  cursor: pointer;
+}
+body .body_cont_cont .body_cont_cont_right .dash_cont .reg_form_nftn .reg_list .reg {
+  background-color: darkgreen;
+}
+body .body_cont_cont .body_cont_cont_right .dash_cont .reg_form_nftn .reg_list .del {
+  background-color: darkred;
+}
 body .body_cont_cont .body_cont_cont_right .dash_cont .dash_sta {
   width: 100%;
   height: -moz-max-content;

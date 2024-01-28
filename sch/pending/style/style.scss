@@ -157,6 +157,36 @@ body{
                         }
                     }
                 }
+                .reg_form_nftn{
+                    padding: 20px 5px;
+                    text-align: center;
+                    width: 90%;
+                    position: relative;
+                    margin: auto;
+                    background-color: $lightgreen;
+                    .reg_list{
+                        width: 70%;
+                        position: relative;
+                        margin: auto;
+                        text-align: center;
+                        display: grid;
+                        grid-template-columns: 40% 40%;
+                        gap: 5%;
+                        div{
+                            padding: 30px 5px;
+                            color: $white;
+                            font-weight: bold;
+                            margin-top: 5px;
+                            cursor: pointer;
+                        }
+                        .reg{
+                            background-color: $darkgreen;
+                        }
+                        .del{
+                            background-color: $darkred;
+                        }
+                    }
+                }
                 .dash_sta{
                     width: 100%;
                     height: max-content;
