@@ -3,10 +3,10 @@
 }
 
 body {
-  background-image: url("images/build.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: repeat;
+  background-image: url(images/sumcou.png), url(images/build.jpg);
+  background-position: top center, center bottom;
+  background-size: contain, cover;
+  background-repeat: no-repeat, repeat;
 }
 body .sign_cont {
   box-shadow: 0px 0px 10px rgb(224, 223, 223);
