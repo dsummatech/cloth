@@ -59,7 +59,7 @@ body .absolute .heading {
 }
 body .absolute .slider {
   width: 100%;
-  height: 400px;
+  height: 300px;
   background-color: white;
   padding: 10px 0;
   overflow: hidden;
@@ -82,6 +82,16 @@ body .absolute .slider .slides .slide img {
   width: 100%;
   height: 100%;
   border-radius: 5px;
+}
+@media screen and (max-width: 800px) {
+  body .absolute .slider {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 500px) {
+  body .absolute .slider {
+    font-size: 3vw;
+  }
 }
 body .absolute .clearance-sales {
   width: 100%;
