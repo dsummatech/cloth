@@ -45,7 +45,7 @@ body .absolute .heading {
   font-family: sans-serif;
   text-align: center;
   font-size: 1.3vw;
-  padding: 5px 0;
+  padding: 10px 0;
 }
 @media screen and (max-width: 800px) {
   body .absolute .heading {
