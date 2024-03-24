@@ -88,6 +88,11 @@ body .absolute .slider .slides .slide img {
     height: 200px;
   }
 }
+@media screen and (max-width: 500px) {
+  body .absolute .slider {
+    height: 150px;
+  }
+}
 body .absolute .clearance-sales {
   width: 100%;
   background-color: white;
