@@ -156,5 +156,44 @@ body{
                 }
             }
         }
+
+        .offers-slider{
+            width: 100%;
+            height: 300px;
+            background-color: $white;
+            padding: 10px 0;
+            overflow: hidden;
+            .slides{
+                width: 200%;
+                height: 100%;
+                display: inline-flex;
+                transition: 1s ease;
+                .slide{
+                    width: 48%;
+                    height: 100%;
+                    margin: 0 .5%;
+                    border-radius: 5px;
+                    position: relative;
+                    transition: 1s ease;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+        
+        @media screen and (max-width:800px) {
+            .offers-slider{
+                height:200px;
+            }
+        }
+        @media screen and (max-width:500px) {
+            .offers-slider{
+                height: 150px;
+            }
+        }
+        //slider end
     }
 }
