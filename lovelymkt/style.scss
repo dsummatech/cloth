@@ -49,6 +49,13 @@ body{
                     }
                 }
             }
+            .cart{
+                top: 12px;
+                position: relative;
+                sup{
+                    color: $orange;
+                }
+            }
         }
         //header end
 
@@ -290,5 +297,23 @@ body{
                 }
             }
         }
+        //offers sales end
+
+        .bottom-fixed{
+            height: 100px;
+            background-color: $orange;
+            width: 100%;
+            bottom: 0;
+        }
+        //bottom fixed brk end
+
+        .bottom-fixed-brk{
+            height: 100px;
+            background-color: $orange;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+        //bottom fixed end
     }
 }

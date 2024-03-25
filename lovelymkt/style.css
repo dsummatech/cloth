@@ -41,6 +41,13 @@ body .absolute .header .search-bar .search input {
   border: 0;
   border-radius: 3px;
 }
+body .absolute .header .cart {
+  top: 12px;
+  position: relative;
+}
+body .absolute .header .cart sup {
+  color: rgb(255, 166, 0);
+}
 body .absolute .heading {
   background-color: rgb(240, 221, 186);
   color: black;
@@ -272,4 +279,17 @@ body .absolute .offers-sales .clearance .sale .write .p del {
   body .absolute .offers-sales .clearance .sale {
     font-size: 3vw;
   }
+}
+body .absolute .bottom-fixed {
+  height: 100px;
+  background-color: rgb(255, 166, 0);
+  width: 100%;
+  bottom: 0;
+}
+body .absolute .bottom-fixed-brk {
+  height: 100px;
+  background-color: rgb(255, 166, 0);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }/*# sourceMappingURL=style.css.map */
