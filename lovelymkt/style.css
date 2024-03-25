@@ -4,6 +4,8 @@
 
 body {
   background-color: rgb(246, 246, 246);
+  color: rgb(0, 0, 19);
+  font-family: sans-serif;
 }
 body .absolute .header {
   background-color: rgb(0, 0, 19);
@@ -177,5 +179,97 @@ body .absolute .offers-slider .slides .slide img {
 @media screen and (max-width: 500px) {
   body .absolute .offers-slider {
     height: 150px;
+  }
+}
+body .absolute .offers-sales {
+  width: 100%;
+  background-color: white;
+  padding: 15px 0;
+  margin: 10px 0;
+  font-family: sans-serif;
+}
+body .absolute .offers-sales .avail {
+  width: 90%;
+  position: relative;
+  margin: auto;
+  left: 5%;
+  margin-bottom: 15px;
+  color: rgb(0, 0, 19);
+  font-size: 2vw;
+  display: inline-flex;
+  justify-content: space-between;
+}
+body .absolute .offers-sales .avail p {
+  color: rgb(255, 166, 0);
+}
+body .absolute .offers-sales .clearance {
+  width: 95%;
+  height: -moz-max-content;
+  height: max-content;
+  position: relative;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  gap: 4%;
+}
+body .absolute .offers-sales .clearance .sale {
+  color: black;
+  padding: 3px 5px;
+  font-size: 1.3vw;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+body .absolute .offers-sales .clearance .sale .img {
+  width: 95%;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+body .absolute .offers-sales .clearance .sale .img img {
+  width: 100%;
+  height: 100%;
+}
+body .absolute .offers-sales .clearance .sale .img .span {
+  width: 70%;
+  padding: 2px 5px;
+  color: rgb(255, 166, 0);
+  border-radius: 5px;
+  position: absolute;
+  text-align: right;
+}
+body .absolute .offers-sales .clearance .sale .img .span p {
+  width: -moz-max-content;
+  width: max-content;
+  padding: 5px 5px;
+  background-color: rgb(240, 221, 186);
+  color: rgb(255, 166, 0);
+  border-radius: 3px;
+  position: relative;
+  right: -100%;
+}
+body .absolute .offers-sales .clearance .sale .write {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  padding: 8px 0;
+}
+body .absolute .offers-sales .clearance .sale .write .p {
+  margin: 4px 0;
+  color: rgb(0, 0, 19);
+}
+body .absolute .offers-sales .clearance .sale .write .p del {
+  color: rgb(65, 65, 65);
+}
+@media screen and (max-width: 800px) {
+  body .absolute .offers-sales .clearance .sale {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  body .absolute .offers-sales .clearance .sale {
+    font-size: 3vw;
   }
 }/*# sourceMappingURL=style.css.map */

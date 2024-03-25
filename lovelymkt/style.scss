@@ -1,9 +1,11 @@
 $grey:rgb(246, 246, 246);
 $white:white;
-$black:black;
+$black:rgb(0, 0, 19);
 $darkblue:rgb(0, 0, 19);
 $lightpurple:rgb(255, 120, 255);
 $lightorange:rgb(240, 221, 186);
+$orange:rgb(255, 166, 0);
+$greyblack:rgb(65, 65, 65);
 
 
 *{
@@ -11,6 +13,8 @@ $lightorange:rgb(240, 221, 186);
 }
 body{
     background-color: $grey;
+    color: $black;
+    font-family: sans-serif;
     .absolute{
         .header{
             background-color: $darkblue;
@@ -194,6 +198,97 @@ body{
                 height: 150px;
             }
         }
-        //slider end
+        //offers slider end
+
+        .offers-sales{
+            width: 100%;
+            background-color: $white;
+            padding: 15px 0;
+            margin: 10px 0;
+            font-family: sans-serif;
+            .avail{
+                width: 90%;
+                position: relative;
+                margin: auto;
+                left: 5%;
+                margin-bottom: 15px;
+                color: $black;
+                font-size: 2vw;
+                display: inline-flex;
+                justify-content: space-between;
+                p{
+                    color: $orange;
+                }
+            }
+            .clearance{
+                width: 95%;
+                height: max-content;
+                position: relative;
+                margin: auto;
+                display: grid;
+                grid-template-columns: 48% 48%;
+                gap:4%;
+                .sale{
+                    color: black;
+                    padding:3px 5px;
+                    font-size: 1.3vw;
+                    font-family: sans-serif;
+                    font-weight: bold;
+                    .img{
+                        width: 95%;
+                        position: relative;
+                        margin: auto;
+                        text-align: center;
+                        display: grid;
+                        grid-template-columns: auto auto;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .span{
+                            width: 70%;
+                            padding:2px 5px;
+                            color: $orange;
+                            border-radius: 5px;
+                            position: absolute;
+                            text-align: right;
+                            p{
+                                width: max-content;
+                                padding:5px 5px;
+                                background-color: $lightorange;
+                                color: $orange;
+                                border-radius: 3px;
+                                position: relative;
+                                right: -100%;
+                            }
+                        }
+                    }
+                    .write{
+                        width: 100%;
+                        position: relative;
+                        margin: auto;
+                        text-align: center;
+                        padding: 8px 0;
+                        .p{
+                            margin: 4px 0;
+                            color: $black;
+                            del{
+                                color: $greyblack;
+                            }
+                        }
+                    }
+                }
+                @media screen and (max-width:800px) {
+                    .sale{
+                        font-size: 2vw;
+                    }
+                }
+                @media screen and (max-width:500px) {
+                    .sale{
+                        font-size: 3vw;
+                    }
+                }
+            }
+        }
     }
 }
