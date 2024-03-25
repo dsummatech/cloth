@@ -139,7 +139,7 @@ body{
                     font-weight: bold;
                     .img{
                         width: 100%;
-                        background-color: $lightpurple;
+                        background-image: radial-gradient($white, $lightpurple);
                         border-radius: 5px;
                         img{
                             width: 100%;
