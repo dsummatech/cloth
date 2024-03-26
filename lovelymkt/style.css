@@ -242,13 +242,13 @@ body .absolute .offers-sales .clearance .sale .img img {
 @media screen and (max-width: 800px) {
   body .absolute .offers-sales .clearance .sale .img img {
     width: 100%;
-    height: 250px;
+    height: 200px;
   }
 }
 @media screen and (max-width: 500px) {
   body .absolute .offers-sales .clearance .sale .img img {
     width: 100%;
-    height: 200px;
+    height: 150px;
   }
 }
 body .absolute .offers-sales .clearance .sale .img .span {
