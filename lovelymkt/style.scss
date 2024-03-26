@@ -309,23 +309,63 @@ body{
                 }
             }
         }
-        //offers sales end
-
-        .bottom-fixed{
-            height: 100px;
-            background-color: $orange;
+        //offers sales 
+        
+        .bottom-fixed-brk{
+            height: 60px;
+            background-color: transparent;
             width: 100%;
             bottom: 0;
         }
         //bottom fixed brk end
 
-        .bottom-fixed-brk{
-            height: 100px;
-            background-color: $orange;
+        .bottom-fixed{
+            height: max-content;
+            background-color: $white;
             width: 100%;
-            position: fixed;
             bottom: 0;
+            position: fixed;
+            padding: 10px 0;
+            text-align: center;
+            .bottom-menu{
+                background-color: transparent;
+                display: grid;
+                grid-template-columns: 19% 19% 19% 19% 19%;
+                gap: 1%;
+                height: max-content;
+                span{
+                    font-size: 1.5vw;
+                    color: $orange;
+                }
+                @media screen and (max-width:800px) {
+                    span{
+                        font-size: 3vw;
+                    }
+                }
+                @media screen and (max-width:500px) {
+                    span{
+                        font-size: 4.5vw;
+                    }
+                }
+                p{
+                    font-size: 1vw;
+                    padding: 2px 0;
+                    color: $darkblue;
+                }
+                @media screen and (max-width:800px) {
+                    p{
+                        font-size: 2.5vw;
+                    }
+                }
+                @media screen and (max-width:500px) {
+                    p{
+                        font-size: 3.5vw;
+                    }
+                }
+            }
         }
         //bottom fixed end
+
+        
     }
 }

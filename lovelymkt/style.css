@@ -293,16 +293,56 @@ body .absolute .offers-sales .clearance .sale .write .p del {
     font-size: 3vw;
   }
 }
-body .absolute .bottom-fixed {
-  height: 100px;
-  background-color: #fc0fc0;
+body .absolute .bottom-fixed-brk {
+  height: 60px;
+  background-color: transparent;
   width: 100%;
   bottom: 0;
 }
-body .absolute .bottom-fixed-brk {
-  height: 100px;
-  background-color: #fc0fc0;
+body .absolute .bottom-fixed {
+  height: -moz-max-content;
+  height: max-content;
+  background-color: white;
   width: 100%;
-  position: fixed;
   bottom: 0;
+  position: fixed;
+  padding: 10px 0;
+  text-align: center;
+}
+body .absolute .bottom-fixed .bottom-menu {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 19% 19% 19% 19% 19%;
+  gap: 1%;
+  height: -moz-max-content;
+  height: max-content;
+}
+body .absolute .bottom-fixed .bottom-menu span {
+  font-size: 1.5vw;
+  color: #fc0fc0;
+}
+@media screen and (max-width: 800px) {
+  body .absolute .bottom-fixed .bottom-menu span {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  body .absolute .bottom-fixed .bottom-menu span {
+    font-size: 4.5vw;
+  }
+}
+body .absolute .bottom-fixed .bottom-menu p {
+  font-size: 1vw;
+  padding: 2px 0;
+  color: rgb(0, 0, 19);
+}
+@media screen and (max-width: 800px) {
+  body .absolute .bottom-fixed .bottom-menu p {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  body .absolute .bottom-fixed .bottom-menu p {
+    font-size: 3.5vw;
+  }
 }/*# sourceMappingURL=style.css.map */
