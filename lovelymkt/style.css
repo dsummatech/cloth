@@ -536,7 +536,7 @@ body .absolute .bottom-fixed .bottom-menu {
 }
 body .absolute .bottom-fixed .bottom-menu span {
   font-size: 1.5vw;
-  color: #fc0fc0;
+  color: #c526ff;
 }
 @media screen and (max-width: 800px) {
   body .absolute .bottom-fixed .bottom-menu span {
