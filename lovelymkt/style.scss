@@ -2,7 +2,7 @@ $grey:rgb(242, 240, 240);
 $white:white;
 $black:rgb(0, 0, 19);
 $darkblue:rgb(0, 0, 19);
-$lightpurple:rgb(255, 120, 255);
+$lightpurple:#c900fe;
 $lightorange:rgb(240, 221, 186);
 $orange:rgb(255, 166, 0);
 $greyblack:rgb(65, 65, 65);
@@ -81,7 +81,7 @@ body{
 
         .slider{
             width: 100%;
-            height: 300px;
+            height: max-content;
             background-color: $white;
             padding: 10px 0;
             overflow: hidden;
