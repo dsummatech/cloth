@@ -7,6 +7,10 @@ body {
   color: rgb(0, 0, 19);
   font-family: sans-serif;
 }
+body a {
+  color: unset;
+  text-decoration: none;
+}
 body .absolute .header {
   background-color: rgb(0, 0, 19);
   width: 100%;
@@ -534,32 +538,157 @@ body .absolute .bottom-fixed .bottom-menu {
   height: -moz-max-content;
   height: max-content;
 }
-body .absolute .bottom-fixed .bottom-menu span {
+body .absolute .bottom-fixed .bottom-menu .menu span {
   font-size: 1.5vw;
-  color: #c526ff;
 }
 @media screen and (max-width: 800px) {
-  body .absolute .bottom-fixed .bottom-menu span {
+  body .absolute .bottom-fixed .bottom-menu .menu span {
     font-size: 3vw;
   }
 }
 @media screen and (max-width: 500px) {
-  body .absolute .bottom-fixed .bottom-menu span {
+  body .absolute .bottom-fixed .bottom-menu .menu span {
     font-size: 4.5vw;
   }
 }
-body .absolute .bottom-fixed .bottom-menu p {
+body .absolute .bottom-fixed .bottom-menu .menu p {
   font-size: 1vw;
   padding: 2px 0;
-  color: rgb(0, 0, 19);
 }
 @media screen and (max-width: 800px) {
-  body .absolute .bottom-fixed .bottom-menu p {
+  body .absolute .bottom-fixed .bottom-menu .menu p {
     font-size: 2.5vw;
   }
 }
 @media screen and (max-width: 500px) {
-  body .absolute .bottom-fixed .bottom-menu p {
+  body .absolute .bottom-fixed .bottom-menu .menu p {
     font-size: 3.1vw;
+  }
+}
+body .absolute .bottom-fixed .bottom-menu .active {
+  color: #c526ff;
+}
+body .category-con {
+  background-color: transparent;
+  width: 95%;
+  margin: 50px 0;
+}
+body .category-con .right-left {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5%;
+}
+body .category-con .right-left .left {
+  background-color: transparent;
+  text-align: center;
+  position: fixed;
+  height: 82%;
+  width: 25%;
+  overflow-y: scroll;
+}
+body .category-con .right-left .left .left-list {
+  margin: auto;
+  position: relative;
+  height: -moz-max-content;
+  height: max-content;
+}
+body .category-con .right-left .left .left-list .active {
+  background-color: transparent;
+  border-left: 4px solid #c526ff;
+}
+body .category-con .right-left .left .left-list .list {
+  background-color: white;
+  padding: 20px 0;
+  text-transform: capitalize;
+  margin: 1px 0 1px 0;
+}
+body .category-con .right-left .left .left-list .list p {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+@media screen and (max-width: 800px) {
+  body .category-con .right-left .left .left-list .list {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  body .category-con .right-left .left .left-list .list {
+    font-size: 3vw;
+  }
+}
+body .category-con .right-left .right {
+  width: 70%;
+  position: relative;
+  left: 35%;
+}
+body .category-con .right-left .right .clearance-sales {
+  width: 100%;
+  background-color: white;
+  padding: 15px 0 35px 0;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+body .category-con .right-left .right .clearance-sales .avail {
+  width: 90%;
+  position: relative;
+  margin: auto;
+  left: 5%;
+  margin-bottom: 15px;
+  color: rgb(0, 0, 19);
+  font-size: 2vw;
+  display: inline-flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(241, 237, 237);
+  padding: 8px 0;
+}
+body .category-con .right-left .right .clearance-sales .avail p {
+  color: #fc0fc0;
+}
+body .category-con .right-left .right .clearance-sales .clearance {
+  width: 90%;
+  height: -moz-max-content;
+  height: max-content;
+  position: relative;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 31.5% 31.5% 31.5%;
+  gap: 2%;
+}
+body .category-con .right-left .right .clearance-sales .clearance .sale {
+  color: black;
+  padding: 3px 5px;
+  font-size: 1.3vw;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+body .category-con .right-left .right .clearance-sales .clearance .sale .img {
+  width: 100%;
+  background-image: radial-gradient(white, #c526ff);
+  border-radius: 5px;
+}
+body .category-con .right-left .right .clearance-sales .clearance .sale .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+body .category-con .right-left .right .clearance-sales .clearance .sale .write {
+  width: 90%;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  padding: 8px;
+}
+@media screen and (max-width: 800px) {
+  body .category-con .right-left .right .clearance-sales .clearance .sale {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  body .category-con .right-left .right .clearance-sales .clearance .sale {
+    font-size: 3vw;
   }
 }/*# sourceMappingURL=style.css.map */

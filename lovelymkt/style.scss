@@ -15,6 +15,10 @@ body{
     background-color: $grey;
     color: $black;
     font-family: sans-serif;
+    a{
+        color: unset;
+        text-decoration: none;
+    }
     .absolute{
         .header{
             background-color: $darkblue;
@@ -552,39 +556,166 @@ body{
                 grid-template-columns: 19% 19% 19% 19% 19%;
                 gap: 1%;
                 height: max-content;
-                span{
-                    font-size: 1.5vw;
+                .menu{
+                    span{
+                        font-size: 1.5vw;
+                    }
+                    @media screen and (max-width:800px) {
+                        span{
+                            font-size: 3vw;
+                        }
+                    }
+                    @media screen and (max-width:500px) {
+                        span{
+                            font-size: 4.5vw;
+                        }
+                    }
+                    p{
+                        font-size: 1vw;
+                        padding: 2px 0;
+                    }
+                    @media screen and (max-width:800px) {
+                        p{
+                            font-size: 2.5vw;
+                        }
+                    }
+                    @media screen and (max-width:500px) {
+                        p{
+                            font-size: 3.1vw;
+                        }
+                    }
+                }
+                .active{
                     color: $lightpurple;
-                }
-                @media screen and (max-width:800px) {
-                    span{
-                        font-size: 3vw;
-                    }
-                }
-                @media screen and (max-width:500px) {
-                    span{
-                        font-size: 4.5vw;
-                    }
-                }
-                p{
-                    font-size: 1vw;
-                    padding: 2px 0;
-                    color: $darkblue;
-                }
-                @media screen and (max-width:800px) {
-                    p{
-                        font-size: 2.5vw;
-                    }
-                }
-                @media screen and (max-width:500px) {
-                    p{
-                        font-size: 3.1vw;
-                    }
                 }
             }
         }
         //bottom fixed end
 
         
+    }
+
+
+    //categories page
+    .category-con{
+        background-color: transparent;
+        width: 95%;
+        margin: 50px 0;
+        .right-left{
+            width: 100%;
+            height: max-content;
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 5%;
+            .left{
+                background-color: transparent;
+                text-align: center;
+                position: fixed;
+                height: 82%;
+                width: 25%;
+                overflow-y: scroll;
+                .left-list{
+                    margin: auto;
+                    position: relative;
+                    height: max-content;
+                    .active{
+                        background-color: transparent;
+                        border-left: 4px solid $lightpurple;
+                    }
+                    .list{
+                        background-color: $white;
+                        padding: 20px 0;
+                        text-transform: capitalize;
+                        margin: 1px 0 1px 0;
+                        p{
+                            width: 80%;
+                            margin: auto;
+                            position: relative;
+                        }
+                    }
+                    @media screen and (max-width:800px) {
+                        .list{
+                            font-size: 2vw;
+                        }
+                    }
+                    @media screen and (max-width:500px) {
+                        .list{
+                            font-size: 3vw;
+                        }
+                    }
+                }
+            }
+            .right{
+                width: 70%;
+                position: relative;
+                left: 35%;
+                .clearance-sales{
+                    width: 100%;
+                    background-color: $white;
+                    padding: 15px 0 35px 0;
+                    margin: 10px 0;
+                    border-radius: 5px;
+                    .avail{
+                        width: 90%;
+                        position: relative;
+                        margin: auto;
+                        left: 5%;
+                        margin-bottom: 15px;
+                        color: $black;
+                        font-size: 2vw;
+                        display: inline-flex;
+                        justify-content: space-between;
+                        border-bottom: 1px solid $grey;
+                        padding: 8px 0;
+                        p{
+                            color: $orange;
+                        }
+                    }
+                    .clearance{
+                        width: 90%;
+                        height: max-content;
+                        position: relative;
+                        margin: auto;
+                        display: grid;
+                        grid-template-columns: 31.5% 31.5% 31.5%;
+                        gap:2%;
+                        .sale{
+                            color: black;
+                            padding:3px 5px;
+                            font-size: 1.3vw;
+                            font-family: sans-serif;
+                            font-weight: bold;
+                            .img{
+                                width: 100%;
+                                background-image: radial-gradient($white, $lightpurple);
+                                border-radius: 5px;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 5px;
+                                }
+                            }
+                            .write{
+                                width: 90%;
+                                position: relative;
+                                margin: auto;
+                                text-align: center;
+                                padding: 8px;
+                            }
+                        }
+                        @media screen and (max-width:800px) {
+                            .sale{
+                                font-size: 2vw;
+                            }
+                        }
+                        @media screen and (max-width:500px) {
+                            .sale{
+                                font-size: 3vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
