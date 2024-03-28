@@ -22,10 +22,10 @@ body .absolute .orders-con {
   grid-template-columns: 49% 49%;
   gap: 2%;
   overflow-x: hidden;
-  transition: 1s ease;
+  transition: 0.3s ease;
 }
 body .absolute .orders-con .orders-list {
-  transition: 1s ease;
+  transition: 0.3s ease;
   width: 100%;
   background-color: transparent;
   position: relative;
@@ -50,9 +50,19 @@ body .absolute .orders-con .orders-list .list .write p {
 body .absolute .orders-con .orders-list .list .write .status {
   width: -moz-max-content;
   width: max-content;
-  padding: 10px;
+  padding: 5px;
   color: white;
   border-radius: 5px;
+}
+@media screen and (max-width: 800px) {
+  body .absolute .orders-con .orders-list .list .write {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  body .absolute .orders-con .orders-list .list .write {
+    font-size: 3vw;
+  }
 }
 body .absolute header {
   width: 100%;
@@ -744,7 +754,7 @@ body .category-con .right-left .right .clearance-sales .clearance .sale {
 }
 body .category-con .right-left .right .clearance-sales .clearance .sale .img {
   width: 100%;
-  background-image: radial-gradient(white, #c526ff);
+  background-color: white;
   border-radius: 5px;
 }
 body .category-con .right-left .right .clearance-sales .clearance .sale .img img {
