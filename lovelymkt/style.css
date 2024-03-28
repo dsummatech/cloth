@@ -655,6 +655,73 @@ body .absolute .bottom-fixed .bottom-menu .menu p {
 body .absolute .bottom-fixed .bottom-menu .active {
   color: #c526ff;
 }
+body .absolute .app-btn {
+  width: 100%;
+  background-color: transparent;
+  margin: 10px 0;
+  font-weight: bolder;
+  text-align: center;
+}
+body .absolute .app-btn .btn-con {
+  background-color: #c526ff;
+  color: white;
+  text-align: center;
+  width: 80%;
+  padding: 10px 5px;
+  position: relative;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 20% auto;
+  border-radius: 5px;
+}
+@media screen and (max-width: 800px) {
+  body .absolute .app-btn {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  body .absolute .app-btn {
+    font-size: 3.7vw;
+  }
+}
+body .absolute .acct-lists {
+  width: 100%;
+  background-color: transparent;
+}
+body .absolute .acct-lists .p {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  padding: 5px 0;
+  text-transform: uppercase;
+  color: rgb(87, 87, 87);
+}
+body .absolute .acct-lists .lists {
+  width: 100%;
+  background-color: white;
+  margin: 10px 0;
+  padding: 10px 0;
+}
+body .absolute .acct-lists .lists .list {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  text-align: left;
+  padding: 13px 0;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 800px) {
+  body .absolute .acct-lists {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  body .absolute .acct-lists {
+    font-size: 3.7vw;
+  }
+}
 body .category-con {
   background-color: transparent;
   width: 95%;
