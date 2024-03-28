@@ -26,5 +26,21 @@ $(function () {
         
     }
     setInterval(offers_slider, 2000);
+
+    $("header .orders-head .c-orders").click(function () {
+        $(".orders-con .orders-list").css("right","103%");
+        $("header .orders-head .o-orders").css("border-bottom","0");
+        $("header .orders-head .o-orders").css("color","rgb(62, 62, 62)");
+        $("header .orders-head .c-orders").css("border-bottom","3px solid #c526ff");
+        $("header .orders-head .c-orders").css("color","#c526ff");
+    });
+
+    $("header .orders-head .o-orders").click(function () {
+        $(".orders-con .orders-list").css("right","0%");
+        $("header .orders-head .o-orders").css("color","#c526ff");
+        $("header .orders-head .o-orders").css("border-bottom","3px solid #c526ff");
+        $("header .orders-head .c-orders").css("border-bottom","0");
+        $("header .orders-head .c-orders").css("color","rgb(62, 62, 62)");
+    });
     
 });

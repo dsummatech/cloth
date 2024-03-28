@@ -11,31 +11,80 @@ body a {
   color: unset;
   text-decoration: none;
 }
-body .absolute .header {
+body .absolute {
+  overflow-x: hidden;
+}
+body .absolute .orders-con {
+  padding: 10px 0;
+  width: 100%;
+  width: 200%;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  gap: 2%;
+  overflow-x: hidden;
+  transition: 1s ease;
+}
+body .absolute .orders-con .orders-list {
+  transition: 1s ease;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+}
+body .absolute .orders-con .orders-list .list {
+  background-color: white;
+  width: 88%;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 20% 78%;
+  gap: 2%;
+  position: relative;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+body .absolute .orders-con .orders-list .list .img img {
+  width: 100%;
+}
+body .absolute .orders-con .orders-list .list .write p {
+  padding: 3px 0;
+}
+body .absolute .orders-con .orders-list .list .write .status {
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+}
+body .absolute header {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  border: 0;
+}
+body .absolute header .header {
   background-color: rgb(0, 0, 19);
   width: 100%;
   color: white;
   display: grid;
   grid-template-columns: 70% 28%;
   gap: 2%;
-  text-align: center;
-  position: fixed;
-  top: 0;
 }
-body .absolute .header .search-bar {
+body .absolute header .header .search-bar {
   width: 90%;
   position: relative;
   margin: auto;
   padding: 10px 0;
   color: white;
 }
-body .absolute .header .search-bar .search {
+body .absolute header .header .search-bar .search {
   width: 100%;
   position: relative;
   margin: auto;
   text-align: center;
 }
-body .absolute .header .search-bar .search input {
+body .absolute header .header .search-bar .search input {
   width: 100%;
   height: 20px;
   padding: 4px 5px;
@@ -45,12 +94,40 @@ body .absolute .header .search-bar .search input {
   border: 0;
   border-radius: 3px;
 }
-body .absolute .header .cart {
+body .absolute header .header .cart {
   top: 12px;
   position: relative;
 }
-body .absolute .header .cart sup {
+body .absolute header .header .cart sup {
   color: #fc0fc0;
+}
+body .absolute header .orders-head {
+  background-color: white;
+  color: rgb(0, 0, 19);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 0;
+  border: 0;
+}
+body .absolute header .orders-head div {
+  padding: 15px 0;
+  font-weight: bolder;
+  color: rgb(62, 62, 62);
+  cursor: pointer;
+}
+body .absolute header .orders-head .o-orders {
+  border-bottom: 3px solid #c526ff;
+  color: #c526ff;
+}
+@media screen and (max-width: 800px) {
+  body .absolute header .orders-head {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  body .absolute header .orders-head {
+    font-size: 3vw;
+  }
 }
 body .absolute .heading {
   background-color: #fbd2f1;

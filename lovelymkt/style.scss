@@ -20,48 +20,128 @@ body{
         text-decoration: none;
     }
     .absolute{
-        .header{
-            background-color: $darkblue;
+        overflow-x: hidden;
+        //orders.html css
+        .orders-con{
+            padding: 10px 0;
             width: 100%;
-            color: $white;
+            width: 200%;
             display: grid;
-            grid-template-columns: 70% 28%;
+            grid-template-columns: 49% 49%;
             gap: 2%;
-            text-align: center;
-            position: fixed;
-            top: 0;
-            .search-bar{
-                width: 90%;
+            overflow-x: hidden;
+            transition: 1s ease;
+            .orders-list{
+                transition: 1s ease;
+                width: 100%;
+                background-color: transparent;
                 position: relative;
-                margin: auto;
-                padding: 10px 0;
-                color: $white;
-                .search{
-                    width: 100%;
+                .list{
+                    background-color: $white;
+                    width: 88%;
+                    padding: 10px;
+                    display: grid;
+                    grid-template-columns: 20% 78%;
+                    gap: 2%;
                     position: relative;
-                    margin: auto;
-                    text-align: center;
-                    input{
-                        width: 100%;
-                        height: 20px;
-                        padding: 4px 5px;
-                        font-weight: bold;
-                        font-family: sans-serif;
-                        outline: 0;
-                        border: 0;
-                        border-radius: 3px;
+                    margin: 10px auto;
+                    border-radius: 5px;
+                    .img{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .write{
+                        p{
+                            padding: 3px 0;
+                        }
+                        .status{
+                            width: max-content;
+                            padding: 10px;
+                            color: $white;
+                            border-radius: 5px;
+                        }
                     }
                 }
             }
-            .cart{
-                top: 12px;
-                position: relative;
-                sup{
-                    color: $orange;
+        }
+        //orders.html css end
+        header{
+            width: 100%;
+            height: max-content;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            border: 0;
+            .header{
+                background-color: $darkblue;
+                width: 100%;
+                color: $white;
+                display: grid;
+                grid-template-columns: 70% 28%;
+                gap: 2%;
+                .search-bar{
+                    width: 90%;
+                    position: relative;
+                    margin: auto;
+                    padding: 10px 0;
+                    color: $white;
+                    .search{
+                        width: 100%;
+                        position: relative;
+                        margin: auto;
+                        text-align: center;
+                        input{
+                            width: 100%;
+                            height: 20px;
+                            padding: 4px 5px;
+                            font-weight: bold;
+                            font-family: sans-serif;
+                            outline: 0;
+                            border: 0;
+                            border-radius: 3px;
+                        }
+                    }
+                }
+                .cart{
+                    top: 12px;
+                    position: relative;
+                    sup{
+                        color: $orange;
+                    }
+                }
+            }
+            //header end
+
+            .orders-head{
+                background-color: $white;
+                color: $black;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                gap: 0;
+                border: 0;
+                div{
+                    padding: 15px 0;
+                    font-weight: bolder;
+                    color: rgb(62, 62, 62);
+                    cursor: pointer;
+                }
+                .o-orders{
+                    border-bottom: 3px solid $lightpurple;
+                    color: $lightpurple;
+                }
+            }
+            @media screen and (max-width:800px) {
+                .orders-head{
+                    font-size: 2vw;
+                }
+            }
+            @media screen and (max-width:500px) {
+                .orders-head{
+                    font-size: 3vw;
                 }
             }
         }
-        //header end
 
         .heading{
             background-color: $lightorange;
